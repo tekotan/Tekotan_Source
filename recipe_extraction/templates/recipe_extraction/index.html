@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="recipe">Your recipe: </label>
+        <input id="recipe" type="text" name="recipe">
+        <input type="submit" name="submit" value="Get Ingredients">
+    </form>
+    <p>{{ ingredients }}</p>
+</body>
+
+</html>
