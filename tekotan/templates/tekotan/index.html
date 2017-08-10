@@ -6,16 +6,23 @@
 	<title>Tekotan</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main.css" />
+	<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
 </head>
 
 <body>
-
+	<script type="text/javascript">
+	function ru() {
+	  var images = ['../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg', '../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg', '../{{ STATIC_URL }}images/banner05.jpg', '../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg', '../{{ STATIC_URL }}images/banner08.jpg', '../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'];
+	  var elem = document.getElementById('header')
+		elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
+	}
+	window.onload = ru;
+</script>
 	<!-- Header -->
 	<header id="header" class="alt">
 		<div class="inner">
 			<h1>Tekotan</h1>
-			<p>A Way for A Middle School Student to Show His Progress</p>
+			<p>A Way for A Student to Show His Progress</p>
 		</div>
 	</header>
 
@@ -40,7 +47,7 @@
 			<span id="myprojects"></span>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}Earth Sun And Code/index.html"><img src="../{{ STATIC_URL }}images/pic06.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}Earth Sun And Code/index.html"><img src="../{{ STATIC_URL }}images/pic006.jpg" alt="" /></a>
 					<h3>Earth Sun and Code</h3>
 				</header>
 				<p>This is a great way to memorize your solar system stats in an interactive way. This was one of the few projects that
@@ -51,7 +58,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}fireworks/index.html"><img src="../{{ STATIC_URL }}images/pic07.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}fireworks/index.html"><img src="../{{ STATIC_URL }}images/pic007.jpg" alt="" /></a>
 					<h3>Fireworks</h3>
 				</header>
 				<p>This was supposed to be for the Fourth of July but I finished 3 days late so I tweaked it a bit and put it on today.
@@ -62,7 +69,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}game of Balls/index.html"><img src="../{{ STATIC_URL }}images/pic09.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}game of Balls/index.html"><img src="../{{ STATIC_URL }}images/pic009.jpg" alt="" /></a>
 					<h3>A Game of Balls</h3>
 				</header>
 				<p>This is my first real game I made.</p>
@@ -72,7 +79,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}paint/index.html"><img src="../{{ STATIC_URL }}images/pic11.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}paint/index.html"><img src="../{{ STATIC_URL }}images/pic011.jpg" alt="" /></a>
 					<h3>Paint</h3>
 				</header>
 				<p>Simple copy of microsoft paint with some different colors and brushes.</p>
@@ -82,7 +89,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}Pong/index.html"><img src="../{{ STATIC_URL }}images/pic14.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}Pong/index.html"><img src="../{{ STATIC_URL }}images/pic014.jpg" alt="" /></a>
 					<h3>Pong</h3>
 				</header>
 				<p>A game that was popular in the old days.</p>
@@ -92,7 +99,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}scientific calculator/index.html"><img src="../{{ STATIC_URL }}images/pic15.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}scientific calculator/index.html"><img src="../{{ STATIC_URL }}images/pic015.jpg" alt="" /></a>
 					<h3>Scientific Calculator</h3>
 				</header>
 				<p>This is another other project that took me more than a few days.</p>
@@ -102,7 +109,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}searchnearby/index.html"><img src="../{{ STATIC_URL }}images/pic16.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}searchnearby/index.html"><img src="../{{ STATIC_URL }}images/pic016.jpg" alt="" /></a>
 					<h3>Google Map Api Search Nearby</h3>
 				</header>
 				<p>A project using Google Map Api, it allows you to look for certain places around a location.</p>
@@ -112,7 +119,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}Tower Of Hanoi/index.html"><img src="../{{ STATIC_URL }}images/pic17.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}Tower Of Hanoi/index.html"><img src="../{{ STATIC_URL }}images/pic017.jpg" alt="" /></a>
 					<h3>Tower of Hanoi</h3>
 				</header>
 				<p>This is a very strategic game. Even I can't beat it sometimes.</p>
@@ -122,7 +129,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}AnimatedAnimals/index.html"><img src="../{{ STATIC_URL }}images/pic18.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}AnimatedAnimals/index.html"><img src="../{{ STATIC_URL }}images/pic018.jpg" alt="" /></a>
 					<h3>Animated Animals</h3>
 				</header>
 				<p>This was for my sister. I used a tutorial at <a href="http://tympanus.net/codrops/2016/03/21/animated-animals-css-svg/">codrops</a>.</p>
@@ -132,7 +139,7 @@
 			</article>
 			<article class="item">
 				<header>
-					<a href="../{{ STATIC_URL }}TheAviator/index.html"><img src="../{{ STATIC_URL }}images/pic19.jpg" alt="" /></a>
+					<a href="../{{ STATIC_URL }}TheAviator/index.html"><img src="../{{ STATIC_URL }}images/pic019.jpg" alt="" /></a>
 					<h3>The Aviator</h3>
 				</header>
 				<p>Trying out threejs. I used a tutorial at <a href="http://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/">codrops</a>.</p>
@@ -142,8 +149,8 @@
 			</article>
 
 			<article class="item">
-				<header> 
-					<a href="../calculator"><img src="../{{ STATIC_URL }}images/pic04.jpg" alt="" /></a>
+				<header>
+					<a href="../calculator"><img src="../{{ STATIC_URL }}images/pic004.jpg" alt="" /></a>
 					<h3>The Equation Calculator</h3>
 				</header>
 				<p>My first Django App! I used some backend python hacks and added error handling.</p>
@@ -164,7 +171,7 @@
 					<section class="main items">
 					<article class="item">
 						<header>
-							<a href="/Sentiment_Analysis"><img src="../{{ STATIC_URL }}images/pic20.jpg" alt="" /></a>
+							<a href="/Sentiment_Analysis"><img src="../{{ STATIC_URL }}images/pic020.jpg" alt="" /></a>
 							<h3>Sentiment Analysis</h3>
 						</header>
 						<p>This is an awesome representation of how tensorflow can do remarkable things. In this project, you can enter any
@@ -179,7 +186,7 @@
 				</section>
 								<article class="item">
 									<header>
-										<a href="/signup"><img src="../{{ STATIC_URL }}images/pic21.jpg" alt="" /></a>
+										<a href="/signup"><img src="../{{ STATIC_URL }}images/pic021.jpg" alt="" /></a>
 										<h3>Email Registration</h3>
 									</header>
 									<p>If you want to get updates whenever I post new projects, enter your email here. It will first send a
@@ -205,7 +212,7 @@
 	<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
 	<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
 	<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/main.js"></script>
+	<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
 
 </body>
 
