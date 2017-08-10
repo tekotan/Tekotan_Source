@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Signup</title>
+  </head>
+  <body>
+    <form name="signup" method="POST"class='form-horizontal'>
+      {% csrf_token %}
+      <label>Enter your first name:</label>
+      <input type="text" name="First_name" value="" style="width:300px; height:30px" placeholder="ie: Bob">
+      <label>Enter your last name:</label>
+      <input type="text" name="Last_name" value="" style="width:300px; height:30px" placeholder="ie: Joe">
+      <label> enter email here: </label>
+      <input type="text" name="email" value="" style="width:300px; height:30px" placeholder="ie: foo@bar.net" >
+      <input type="submit" name="" value="Submit">
+    </form>
+    <p>{{ result }}</p>
+    <script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+    <script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+    <script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+    <script src="../{{ STATIC_URL }}assets/js/main.js"></script>
+  </body>
+</html>
