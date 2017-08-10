@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<title>Html calculator</title>
+</head>
+
+<body>
+	<p>This is a calculator that can do normal expressions, 1 variable equations and 2 variable equations. When doing 2 variable
+		equations, seperate the 2 equations with a semicolon</p>
+	<p style="color: red; font-size: 30px;">{{ error }}</p>
+	<form name="calculator" method="POST">
+		{% csrf_token %}
+		<label for="ans"></label>
+		<input id="ans" type="text" name="ans" value="{{ answer }}" style="width:413px">
+		<br>
+		<div><input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+			<input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+			<input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+			<input type="button" value="+" onclick="document.calculator.ans.value+='+'">
+			<br>
+			<input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+			<input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+			<input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+			<input type="button" value="-" onclick="document.calculator.ans.value+='-'">
+			<br>
+			<input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+			<input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+			<input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+			<input type="button" value="*" onclick="document.calculator.ans.value+='*'">
+			<br>
+			<input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+			<input type="button" value="x" onclick="document.calculator.ans.value+='x'">
+			<input type="button" value="y" onclick="document.calculator.ans.value+='y'">
+			<input type="button" value="=" name="=" onclick="document.calculator.ans.value+='='"><br>
+			<input type="submit" name="1 Variable" value="1 Variable">
+			<input type="submit" name="=" value="Enter">
+			<input type="button" name=clear "reset" value="clear" onclick="document.calculator.ans.value=''">
+			<input type="submit" name="2 Variable" value="2 Variable">
+		</div>
+		<style>
+			input {
+				width: 100px
+			}
+		</style>
+	</form>
+</body>
+
+</html>
