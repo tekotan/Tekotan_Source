@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  </head>
+  <body>
+    <form class="pure-form pure-form-aligned" method="POST">
+      {% csrf_token %}
+      <div class="pure-control-group">
+        <label for="name">Enter your text here:</label>
+        <input type="text" class="pure-input-rounded" name='text'>
+        <button type="submit" class="pure-button">Classify!</button>
+      </div>
+
+    </form>
+    <table class="pure-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Text</th>
+          <th>Sentiment</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for val in Sentiment %}
+        <tr>
+          {% for i in val %}
+            <td>{{ i }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+  </body>
+</html>
