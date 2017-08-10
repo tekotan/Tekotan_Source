@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Name that colour!</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="timer__container">
+    <div id="timer" class="timer"></div>
+</div>
+<div class="scores__container wrap clearfix">
+    <div class="score__container">
+        <p>Score: <span id="score" class="score"></span></p>
+    </div>
+    <div id="pb-container" class="pb__container">
+        <p>Personal best: <span id="pb" class="score"></span></p>
+    </div>
+</div>
+<div class="wrap">
+    <h1 class="title">Name that colour!</h1>
+    <p class="subtitle">Click the colour, <em>not</em> the word.</p>
+    <button class="start" id="start">Go!</button>
+    <p class="word" id="word"></p>
+    <ul id="options" class="options__container"></ul>
+    <div id="gameover-container" class="modal__container">
+        <div class="modal">
+            <p>Game over!</p>
+            <button id="restart">Have another go?</button>
+        </div>
+    </div>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,119 @@
+/* Base */
+.base{
+	background-color: #554400;
+	position: relative;
+	top: 250px;
+	width: 540px;
+	height: 50px;
+}
+.error_msg{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	position: absolute;
+	top: 17px;
+}
+/* Posts */
+.post_area{
+	float: left;
+	width: 180px;
+}
+.stick{
+	background-color: #554400;
+	position: relative;
+	left: 80px;
+	width: 20px;
+	height: 250px;
+}
+/* Discs */
+.disc{
+	position: absolute;
+	height: 20px;
+}
+.disc_9{
+	background-color: #0000FF;
+	left: -72px;
+	width: 164px;
+}
+.disc_8{
+	background-color: #00FF00;
+	left: -64px;
+	width: 148px;
+}
+.disc_7{
+	background-color: #FF0000;
+	left: -56px;
+	width: 132px;
+}
+.disc_6{
+	background-color: #00FFFF;
+	left: -48px;
+	width: 116px;
+}
+.disc_5{
+	background-color: #FF00FF;
+	left: -40px;
+	width: 100px;
+}
+.disc_4{
+	background-color: #888888;
+	left: -32px;
+	width: 84px;
+}
+.disc_3{
+	background-color: #000088;
+	left: -24px;
+	width: 68px;
+}
+.disc_2{
+	background-color: #008800;
+	left: -16px;
+	width: 52px;
+}
+.disc_1{
+	background-color: #880000;
+	left: -8px;
+	width: 36px;
+}
+.level_9{
+	top: 70px;
+}
+.level_8{
+	top: 90px;
+}
+.level_7{
+	top: 110px;
+}
+.level_6{
+	top: 130px;
+}
+.level_5{
+	top: 150px;
+}
+.level_4{
+	top: 170px;
+}
+.level_3{
+	top: 190px;
+}
+.level_2{
+	top: 210px;
+}
+.level_1{
+	top: 230px;
+}
+.selected{
+	border: 1px solid #FFFF00;
+}
+/* Instructions */
+.instructions{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	top: 58px;
+	width: 540px;
+}
+h4{
+	font-size: 24px;
+	-webkit-margin-after: 3px;
+}

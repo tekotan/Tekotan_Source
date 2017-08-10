@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Place Autocomplete</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            height: 100%;
+        }
+        
+        .controls {
+            margin-top: 10px;
+            border: 1px solid transparent;
+            border-radius: 2px 0 0 2px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            height: 32px;
+            outline: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        #pac-input {
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 300px;
+        }
+        
+        #pac-input:focus {
+            border-color: #4d90fe;
+        }
+        
+        #choices {
+            color: black;
+            text-overflow: ellipsis;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 312px;
+            padding: 0 11px 0 13px;
+            background-color: #fff;
+        }
+        
+        #choices:focus {
+            border-color: #4d90fe;
+        }
+        
+        .pac-container {
+            font-family: Roboto;
+        }
+        
+        #type-selector {
+            color: #fff;
+            background-color: #4d90fe;
+            padding: 5px 11px 0px 11px;
+        }
+        
+        #type-selector label {
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form>
+
+
+        <input id="pac-input" class="controls" type="text" placeholder="Enter a location" value="2298 W Cantara Dr, Dublin, CA, United States">
+        <select size="1" id="choices">
+            <option value="health" id="health" selected>health</option>
+            <option value="food" id="food">food</option>
+            <option value="place_of_worship" id="place_of_worship">place_of_worship</option>
+            <option value="museum" id="museum">museum</option>
+            <option value="bank" id="bank">bank</option>
+            <option value="library" id="library">library</option>
+            <option value="pharmacy" id="pharmacy">pharmacy</option>
+            <option value="gas_station" id="gas_station">gas_station</option>
+            <option value="grocery_or_supermarket" id="grocery_or_supermarket">grocery_or_supermarket</option>
+            <option value="school" id="school">school</option>
+            <option value="department_store" id="department_store">department_store</option>
+            <option value="convenience_store" id="convenience_store">convenience_store</option>
+            <option value="local_government_office" id="local_government_office">local_government_office</option>
+            <option value="restaurant" id="restaurant">restaurant</option>
+        </select>
+    </form>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC_hqf71wlAvGbu4SxOrz_KVnNbHxCnQQ&libraries=places&callback=initMap" async defer></script>
+    <script src="map.js">
+    </script>
+
+</body>
+
+</html>

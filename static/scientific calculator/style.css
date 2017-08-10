@@ -1,0 +1,131 @@
+script {
+    text-align: center;
+}
+
+.mathfun3 {
+    background-color: green
+}
+
+p {
+    width: 0
+}
+
+h1 {
+    color: #33FF00;
+    text-align: center;
+    font-size: 60px;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1467094568967-95f87ee9c873?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=51fe3b51e0512cc9fe5115040716205b);
+}
+
+.mathfun {
+    background: #ff4561;
+    font-size: 13px;
+    height: 28px;
+    width: 38px;
+    font-family: Monaco, Verdana, Sans-serif;
+}
+
+.mathfun1 {
+    background: #ff4561;
+    font-size: 13pt;
+    height: 32px;
+    width: 38px;
+    font-family: Monaco, Verdana, Sans-serif;
+}
+
+.number {
+    background: black;
+    font-size: 12pt;
+    height: 32px;
+    width: 38px;
+    font-family: Monaco, Verdana, Sans-serif;
+    color: white
+}
+
+.tabstyle {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #3d4543;
+    border: 4px solid #D0D0D0;
+    color: #002166;
+    width: 250px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.innertable {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #3d4543;
+    color: #002166;
+    width: 250px;
+}
+
+script {
+    text-align: center;
+}
+
+.mathfun3 {
+    background-color: green
+}
+
+p {
+    width: 0
+}
+
+h1 {
+    color: #33FF00;
+    text-align: center;
+    font-size: 60px;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1467094568967-95f87ee9c873?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=51fe3b51e0512cc9fe5115040716205b)
+}
+
+.mathfun {
+    background: #ff4561;
+    font-size: 13px;
+    height: 28px;
+    width: 38px;
+    font-family: Monaco, Verdana, Sans-serif;
+}
+
+.mathfun1 {
+    background: #ff4561;
+    font-size: 13pt;
+    height: 32px;
+    width: 38px;
+    font-family: Monaco, Verdana, Sans-serif;
+}
+
+.number {
+    background: black;
+    font-size: 12pt;
+    height: 32px;
+    width: 38px;
+    font-family: Monaco, Verdana, Sans-serif;
+    color: white
+}
+
+.tabstyle {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #3d4543;
+    border: 4px solid #D0D0D0;
+    color: #002166;
+    width: 250px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.innertable {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #3d4543;
+    color: #002166;
+    width: 250px;
+}

@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="style.css" />
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2></h2>
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+    </script>
+
+    <h1>Tanish's Awesome Calculator</h1>
+
+
+    <p>
+
+        <body style="background-image: url(https://images.unsplash.com/photo-1467094568967-95f87ee9c873?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=51fe3b51e0512cc9fe5115040716205b)">
+            <form name="pqr">
+                <input type="hidden" name="oldresultant" value="">
+                <input type="hidden" name="mem" value="">
+                <div align="center">
+                    <table cellspacing=0 cellpadding=1 class='tabstyle'>
+                        <tr>
+                            <td align="center" valign="middle">
+                                <table width="100%" cellspacing=3 cellpadding=1 class='innertable'>
+                                    <tr>
+                                        <td align="center" valign="middle" width="100%">
+                                            <input type="text" SIZE="16" name="resultant" value="" readonly onFocus="display(document.pqr.resultant.value)" STYLE="FONT-SIZE: 14pt; HEIGHT: 30px; width: 249px">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table cellspacing=3 cellpadding=0 class='innertable'>
+                                    <tr>
+                                        <td colspan=5 align=center valign=middle>
+                                            <SELECT style='display:none;' NAME=xyzab SIZE="1" onChange="if (document.pqr.oldresultant.value != '') {result(document.pqr.oldresultant.value)}; document.pqr.stu.focus()">
+<OPTION VALUE=-1 SELECTED>decimal</OPTION>
+</SELECT>
+                                            <input type="radio" name="vwxyz" checked title="Radians" onClick="document.pqr.stu.focus()"><a href="javascript:document.pqr.vwxyz[0].click()" style='text-decoration:none;' onMouseOver="self.status='Radians'; return true">Rad</a>
+                                            <input type="radio" name="vwxyz" title="Degree" onClick="document.pqr.stu.focus()"><a href="javascript:document.pqr.vwxyz[1].click()" style='text-decoration:none;' onMouseOver="self.status='Degrees'; return true">Deg</a>
+                                            <input type="radio" name="vwxyz" title="Gradient" onClick="document.pqr.stu.focus()"><a href="javascript:document.pqr.vwxyz[2].click()" style='text-decoration:none;' onMouseOver="self.status='Degrees'; return true">Grad</a>
+                                            <span align=center style="font-size: 10px; color:green;" id="dumdiv">
+</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=center valign=middle width="100%" colspan="5">
+                                            <input type="text" SIZE="17" name="stu" id="stu" value="" onkeyup='validatenum(this.value,event)' onChange="enter.click()" STYLE="FONT-SIZE: 10pt; FONT-WEIGHT: bold; HEIGHT: 25px; width: 200px">
+                                        </td>
+                                        <td>
+                                            <input type="button" name="Cls" value="Cls" TITLE="Clear screen" onClick="memory(3)" class='mathfun3' ">
+</td>
+</tr>
+<tr> 
+<td > 
+<input  type="button " name="sqrt " value="sqrt " title="Square root " onClick="ghij(3) " class='mathfun' ">
+                                        </td>
+                                        <td>
+                                            <input type="button" name="root" value="root" title="Root" onClick="ghij(22)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="ln" value="ln" title="Natural logarithm" onClick="ghij(5)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="log" value="log" title="Common logarithm" onClick="ghij(8)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="tan" value="tan" title="Tangent" onClick="ghij(14)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="atan" value="atan" title="Arc tangent" onClick="ghij(10)" class='mathfun'>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" name="kvadrat" value="x^2" title="Square" onClick="ghij(2)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="potencija" value="x^y" title="Power" onClick="ghij(21)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="aln" value="e^x" title="Natural antilogarithm" onClick="ghij(6)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="alog" value="10^x" title="Common antilogarithm" onClick="ghij(9)" class='mathfun' align="left">
+                                        </td>
+                                        <td>
+                                            <input type="button" name="cos" value="cos" title="Cosine" onClick="ghij(15)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="acos" value="acos" title="Arc cosine" onClick="ghij(11)" class='mathfun'>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" name="sign" value="+/-" title="Change sign" onClick="ghij(4)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="1/x" value="1/x" onClick="ghij(7)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="fact" value="x!" title="Factorial" onClick="ghij(20)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="PI" value="Pi" onClick="cdef(Math.PI)" class='mathfun'></td>
+                                        <td>
+                                            <input type="button" name="sin" value="sin" title="Sine" onClick="ghij(16)" class='mathfun'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="asin" value="asin" title="Arc sine" onClick="ghij(12)" class='mathfun'>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" name="7" value="7" onClick="cdef(7)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="8" value="8" onClick="cdef(8)" class='number'>
+                                        </td>
+                                        <td style="width: 28px">
+                                            <input type="button" name="9" value="9" onClick="cdef(9)" class='number'>
+                                        </td>
+                                        <td style="width: 22px">
+                                            <input type="button" name="djeljeno" value="/" onClick="cdef('/')" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="ppm" value="ppm" title="Part per milion" onClick="ghij(18)" class='mathfun1'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="MS" value="MS" title="Memory store" onClick="memory(1)" class='mathfun1'>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" name="4" value="4" onClick="cdef(4)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="5" value="5" onClick="cdef(5)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="6" value="6" onClick="cdef(6)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="puta" value="*" onClick="cdef('*')" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="postotak" value="%" title="Percent" onClick="ghij(17),e()" class='mathfun1'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="MR" value="MR" title="Memory recall" onClick="memory(2)" class='mathfun1'>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" name="1" value="1" onClick="cdef(1)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="2" value="2" onClick="cdef(2)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="3" value="3" onClick="cdef(3)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="minus" value="-" onClick="cdef('-')" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="lijevo" value="(" onClick="cdef('(')" class='mathfun1'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="desno" value=")" onClick="cdef(')')" class='mathfun1'>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="button" name="0" value="0" onClick="cdef(0)" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="." value="." onClick="cdef('.')" class='number'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="exp" value="E" onClick="cdef('e')" class='mathfun1'>
+                                        </td>
+                                        <td>
+                                            <input type="button" name="plus" value="+" onClick="cdef('+')" class='number'>
+                                        </td>
+                                        <td COLSPAN=2>
+                                            <input HEIGHT="32" type="button" name="enter" onClick="ghij(1)" value="=" STYLE="BACKGROUND: #CDCDCD; FONT-SIZE: 12pt; HEIGHT: 32px; width: 85px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan='3'>
+                                            <input height="32" type="button" name="enter" onClick="ghij(1)" value="Enter" STYLE="BACKGROUND: orange; FONT-SIZE: 12pt; HEIGHT: 32px; width: 120px">
+                                        </td>
+                                        <td colspan='3'>
+                                            <input height="32" type="button" name="Backspace" onClick="backspace()" value="Backspace" STYLE="BACKGROUND: navy; FONT-SIZE: 12pt; HEIGHT: 32px; width: 120px">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </FORM>
+    </p>
