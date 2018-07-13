@@ -136,7 +136,7 @@
     <form class="pure-form pure-form" method="POST">
       {% csrf_token %}
       <div class="pure-control-group">
-        <input type="text" placeholder="Enter Your Text Here:"class="pure-input-rounded" name='text'>
+        <input type="text" placeholder="Enter Your Text Here:" autocomplete="off"class="pure-input-rounded" name='text'>
         <button type="submit" class="pure-button">Classify!</button>
       </div>
 </div>
