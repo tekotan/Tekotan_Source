@@ -9,4 +9,4 @@ manage.py
 checkpoint
 tensorboard
 Sentiment_Analysis/Numpy_Arrays
-env
+django
