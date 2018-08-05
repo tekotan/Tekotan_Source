@@ -1,12 +1,13 @@
 import numpy as np
 import re
 from random import randint
+from mysite.settings import STATIC_URL
 
 #Importing Data
-wordsList = np.load('SentimentAnalysis/tensorboard/Numpy_Arrays/wordsList.npy')
+wordsList = np.load('' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordsList.npy')
 wordsList = wordsList.tolist()
 wordsList = [word.decode('UTF-8') for word in wordsList]
-wordVectors = np.load('SentimentAnalysis/tensorboard/Numpy_Arrays/wordVectors.npy')
+wordVectors = np.load('' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordVectors.npy')
 strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
 
 #Helper Functions
@@ -131,4 +132,4 @@ def results():
     return((np.sum(np.equal(x, y))/x.shape))
 sess = tf.InteractiveSession()
 saver = tf.train.Saver()
-saver.restore(sess, tf.train.latest_checkpoint('SentimentAnalysis/tensorboard/RNN2'))
+saver.restore(sess, tf.train.latest_checkpoint(STATIC_URL +'/tensorboard/RNN2'))
