@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'calculator.apps.CalculatorConfig',
 #    'recipe_extraction.apps.RecipeExtractionConfig',
     'signup.apps.SignupConfig',
-    'polls.apps.PollsConfig',
     'tekotan.apps.TekotanConfig',
     'django.contrib.admin',
     'django.contrib.auth',
