@@ -7,31 +7,13 @@ wordsList = np.load('SentimentAnalysis/tensorboard/Numpy_Arrays/wordsList.npy')
 wordsList = wordsList.tolist()
 wordsList = [word.decode('UTF-8') for word in wordsList]
 wordVectors = np.load('SentimentAnalysis/tensorboard/Numpy_Arrays/wordVectors.npy')
-#text = np.load('Numpy Arrays/text.npy')
-the_labels = np.load('SentimentAnalysis/tensorboard/Numpy_Arrays/labels.npy')
 strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
 
 #Helper Functions
 def cleanSentences(string):
     string = string.lower().replace("<br />", " ")
     return re.sub(strip_special_chars, "", string.lower())
-ids = np.load('SentimentAnalysis/tensorboard/Numpy_Arrays/idsMatrix.npy')
-def getTrainBatch():
-    label = []
-    arr = np.zeros([batchSize, maxSeqLength])
-    for i in range(batchSize):
-        num = randint(1, 1000000)
-        arr[i] = ids[num]
-        label.append(the_labels[num])
-    return arr, label
-def getTestBatch():
-    label = []
-    arr = np.zeros([batchSize, maxSeqLength])
-    for i in range(batchSize):
-        num = randint(1000001, the_labels.shape[0]-1)
-        arr[i] = ids[num]
-        label.append(the_labels[num])
-    return arr, label
+
 
 # RNN Model
 
@@ -141,9 +123,9 @@ def test(sent):
 def results():
     arr = np.array([[1, 0]], dtype=np.float32)
     arr_pred = np.array([test("my life sucks")])
-    for i in range(512, ids.shape[0], 512):
-        arr = np.vstack((arr, the_labels[i-512:i]))
-        arr_pred = np.vstack((arr_pred, sess.run(prediction, {input_data:ids[i-512:i]})))
+    for i in range(1000000, ids.shape[0], batchSize):
+        arr = np.vstack((arr, the_labels[i-batchSize:i]))
+        arr_pred = np.vstack((arr_pred, sess.run(prediction, {input_data:ids[i-batchSize:i]})))
     x = np.argmax(arr_pred, axis=1)
     y = np.argmax(arr, axis=1)
     return((np.sum(np.equal(x, y))/x.shape))
