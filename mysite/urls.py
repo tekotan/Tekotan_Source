@@ -21,7 +21,6 @@ from django.views.static import serve
 from django.http import HttpResponseRedirect
 urlpatterns = [
     url(r'^$', include("tekotan.urls")),
-    url(r'^polls/', include('polls.urls')),
     url(r'^Sentiment_Analysis/', include('SentimentAnalysis.urls')),
 #    url(r'^recipe_extraction/', include('recipe_extraction.urls')),
 #    url(r'^calculator/', include('calculator.urls')),
