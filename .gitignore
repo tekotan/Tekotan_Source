@@ -3,9 +3,7 @@
 *.npy
 __pycache__
 myvenv
-db.sqlite3
 .DS_Store
-manage.py
 checkpoint
 tensorboard
 Sentiment_Analysis/Numpy_Arrays
