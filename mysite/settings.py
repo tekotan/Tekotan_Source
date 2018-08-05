@@ -37,7 +37,7 @@ EMAIL_PORT = 587
 # Application definition
 
 INSTALLED_APPS = [
-    'SentimentAnalysis.apps.SentimentanalysisConfig',
+#    'SentimentAnalysis.apps.SentimentanalysisConfig',
     'calculator.apps.CalculatorConfig',
 #    'recipe_extraction.apps.RecipeExtractionConfig',
     'signup.apps.SignupConfig',
