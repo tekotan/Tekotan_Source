@@ -4,10 +4,10 @@ from random import randint
 from mysite.settings import STATIC_URL
 
 #Importing Data
-wordsList = np.load('../' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordsList.npy')
+wordsList = np.load('tekotan.pythonanywhere.com/' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordsList.npy')
 wordsList = wordsList.tolist()
 wordsList = [word.decode('UTF-8') for word in wordsList]
-wordVectors = np.load('../' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordVectors.npy')
+wordVectors = np.load('tekotan.pythonanywhere.com/' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordVectors.npy')
 strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
 
 #Helper Functions
@@ -88,8 +88,6 @@ tf.summary.scalar('Loss', loss)
 tf.summary.scalar('Accuracy', accuracy)
 merged = tf.summary.merge_all()
 validation = tf.summary.scalar('Validation', accuracy)
-logdir = "tensorboard/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S") + "/"
-writer = tf.summary.FileWriter(logdir, sess.graph)
 
 sess = tf.InteractiveSession()
 saver = tf.train.Saver()
