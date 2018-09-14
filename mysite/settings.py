@@ -25,7 +25,7 @@ SECRET_KEY = 'h2@i$zw89dm4%@4)7#i&gn&5h%c=b(k!p*(#&r=+84$cl3f3sv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["www.tekotan.com"]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
@@ -37,7 +37,7 @@ EMAIL_PORT = 587
 # Application definition
 
 INSTALLED_APPS = [
-#    'SentimentAnalysis.apps.SentimentanalysisConfig',
+    'SentimentAnalysis.apps.SentimentanalysisConfig',
     'calculator.apps.CalculatorConfig',
 #    'recipe_extraction.apps.RecipeExtractionConfig',
     'signup.apps.SignupConfig',
