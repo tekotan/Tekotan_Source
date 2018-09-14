@@ -130,4 +130,11 @@ def results():
     return((np.sum(np.equal(x, y))/x.shape))
 sess = tf.InteractiveSession()
 saver = tf.train.Saver()
-saver.restore(sess, tf.train.latest_checkpoint('../'+STATIC_URL +'/tensorboard/RNN2'))
+saver.restore(sess, tf.train.latest_checkpoint('tekotan.pythonanywhere.com/'+STATIC_URL +'/tensorboard/RNN2'))
+'''
+import os
+import sys
+def l():
+    script_path = os.path.dirname(os.path.abspath( __file__ ))
+    return os.path.dirname(os.path.realpath(sys.argv[0]))
+'''
