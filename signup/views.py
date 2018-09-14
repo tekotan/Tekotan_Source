@@ -25,7 +25,7 @@ def evaluate(request):
                 p = Person.objects.create(first_name=firstname, last_name=lastname, email=email)
                 return render(request, 'signup/index.html', {'result': 'You have successfully signed up for email updates'})
         else:
-            return render(request, 'signup/index.html', {'result':'please enter all values'})
+            return render(request, 'signup/index.html', {'result':''})
 
 
 
