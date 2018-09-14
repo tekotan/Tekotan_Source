@@ -23,7 +23,7 @@ def evaluate(request):
                 msg = 'Hi ' +firstname+" "+lastname+ ", thank you for signing up for the tekotan mailing list. This ensures that you don't miss out on any of my new posts"
                 send_mail('Confirmation for Tekotan Emailing list',msg,'b.tanish@gmail.com', [email,])
                 p = Person.objects.create(first_name=firstname, last_name=lastname, email=email)
-                return render(request, 'signup/index.html', {'result': value})
+                return render(request, 'signup/index.html', {'result': 'You have successfully signed up for email updates'})
         else:
             return render(request, 'signup/index.html', {'result':'please enter all values'})
 
