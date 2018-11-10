@@ -263,7 +263,7 @@ a {
 }
 
 a:hover {
-    color: #EF6480 !important;
+    color: deepskyblue !important;
 }
 
 strong, b {
@@ -1165,7 +1165,7 @@ table.alt tbody tr td {
 
 /* Header */
 
-#header {
+#headermain {
     background-color: #444;
     color: rgba(255, 255, 255, 0.75);
     display: -moz-flex;
@@ -1194,40 +1194,40 @@ table.alt tbody tr td {
     cursor: default;
 }
 
-#header input, #header select, #header textarea {
+#headermain input, #headermain select, #headermain textarea {
     color: #ffffff;
 }
 
-#header a {
+#headermain a {
     color: inherit;
 }
 
-#header a:hover {
+#headermain a:hover {
     color: #EF6480 !important;
 }
 
-#header strong, #header b {
+#headermain strong, #headermain b {
     color: #ffffff;
 }
 
-#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+#headermain h1, #headermain h2, #headermain h3, #headermain h4, #headermain h5, #headermain h6 {
     color: #ffffff;
 }
 
-#header blockquote {
+#headermain blockquote {
     border-left-color: #ffffff;
 }
 
-#header code {
+#headermain code {
     background: rgba(255, 255, 255, 0.075);
     border-color: #ffffff;
 }
 
-#header hr {
+#headermain hr {
     border-bottom-color: #ffffff;
 }
 
-#header:before {
+#headermain:before {
     content: '';
     display: block;
     position: absolute;
@@ -1239,22 +1239,22 @@ table.alt tbody tr td {
     background-image: url("images/overlay.png");
 }
 
-#header h1 {
+#headermain h1 {
     margin-bottom: 0.5em;
 }
 
-#header .inner {
+#headermain .inner {
     position: relative;
     z-index: 1;
 }
 
-#header.alt {
-    height: 44em;
-    min-height: 44em;
+#headermain.alt {
+    height: 60em;
+    min-height: 60em;
     min-height: 66vh;
 }
 
-#header.alt:before {
+#headermain.alt:before {
     -moz-transition: background-color 3.5s ease-in;
     -webkit-transition: background-color 3.5s ease-in;
     -ms-transition: background-color 3.5s ease-in;
@@ -1265,7 +1265,7 @@ table.alt tbody tr td {
     transition-delay: 0.5s;
 }
 
-#header.alt h1 {
+#headermain.alt h1 {
     font-size: 4em;
     padding: 0 0.5em 0.25em 0.5em;
     border-bottom: solid 2px #ffffff;
@@ -1275,7 +1275,7 @@ table.alt tbody tr td {
     letter-spacing: 0;
 }
 
-#header.alt p {
+#headermain.alt p {
     text-transform: uppercase;
     letter-spacing: 0.325rem;
     font-weight: 400;
@@ -1283,7 +1283,7 @@ table.alt tbody tr td {
     padding: 0 1.25em;
 }
 
-#header.alt .inner {
+#headermain.alt .inner {
     -moz-transition: opacity 2s ease;
     -webkit-transition: opacity 2s ease;
     -ms-transition: opacity 2s ease;
@@ -1291,27 +1291,27 @@ table.alt tbody tr td {
     opacity: 1;
 }
 
-body.is-loading #header.alt:before {
+body.is-loading #headermain.alt:before {
     background-color: black;
 }
 
-body.is-loading #header.alt .inner {
+body.is-loading #headermain.alt .inner {
     opacity: 0;
 }
 
 @media screen and (max-width: 736px) {
-    #header {
+    #headermain {
         padding: 4em 2em 2em 2em;
     }
-    #header.alt h1 {
+    #headermain.alt h1 {
         font-size: 2.5em;
         padding-left: 0;
         padding-right: 0;
     }
-    #header.alt p {
+    #headermain.alt p {
         padding: 0;
     }
-    #header.alt .inner {
+    #headermain.alt .inner {
         max-width: 20em;
     }
 }
@@ -1421,4 +1421,93 @@ body.is-loading #header.alt .inner {
     #footer:before {
         margin-bottom: 2em;
     }
+}
+
+/* Nav Bar */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #f4f4f4;
+  transition: background .5s;
+  z-index: 2;
+}
+
+.nav-1 {
+  transition: margin-right .5s ease;
+}
+
+.content {
+  background: #c0c0c3;
+  color: #414041;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #f4f4f4;
+}
+
+.toleft {
+  margin-right: 50%;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: inherit;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #666666;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav-link {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    text-decoration: none;
+    border-bottom: none;
+}
+.nav-pad{
+  padding-top: 0.5em;
+}
+.active{
+  color:deepskyblue !important;
 }
