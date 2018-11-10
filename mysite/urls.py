@@ -28,4 +28,5 @@ urlpatterns = [
     url(r"^signup/", include("signup.urls")),
     url(r"^admin/", admin.site.urls),
     url(r"^static/(.*)$", serve, {"document_root": STATIC_ROOT, "show_indexes": True}),
+    url(r"^about_me/", include("about_me.urls")),
 ]

@@ -1163,7 +1163,7 @@ table.alt tbody tr td {
 }
 
 
-/* Header */
+/* header */
 
 #headermain {
     background-color: #444;
@@ -1316,7 +1316,158 @@ body.is-loading #headermain.alt .inner {
     }
 }
 
+/* header-page */
 
+#header-page {
+    background-color: #444;
+    color: rgba(255, 255, 255, 0.75);
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 8em 0 8em 0;
+/*    background-image: url("../../images/banner_.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    cursor: default;
+}
+
+#header-page input, #header-page select, #header-page textarea {
+    color: #ffffff;
+}
+
+#header-page a {
+    color: inherit;
+}
+
+#header-page a:hover {
+    color: #EF6480 !important;
+}
+
+#header-page strong, #header-page b {
+    color: #ffffff;
+}
+
+#header-page h1, #header-page h2, #header-page h3, #header-page h4, #header-page h5, #header-page h6 {
+    color: #ffffff;
+}
+
+#header-page blockquote {
+    border-left-color: #ffffff;
+}
+
+#header-page code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: #ffffff;
+}
+
+#header-page hr {
+    border-bottom-color: #ffffff;
+}
+
+#header-page:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url("images/overlay.png");
+}
+
+#header-page h1 {
+    margin-bottom: 0.5em;
+}
+
+#header-page .inner {
+    position: relative;
+    z-index: 1;
+}
+
+#header-page.alt {
+    height: 30em;
+    min-height: 30em;
+    min-height: 66vh;
+}
+
+#header-page.alt:before {
+    -moz-transition: background-color 3.5s ease-in;
+    -webkit-transition: background-color 3.5s ease-in;
+    -ms-transition: background-color 3.5s ease-in;
+    transition: background-color 3.5s ease-in;
+    -moz-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#header-page.alt h1 {
+    font-size: 4em;
+    padding: 0 0.5em 0.25em 0.5em;
+    border-bottom: solid 2px #ffffff;
+    font-weight: 200;
+    font-family: "Pacifico", cursive;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+#header-page.alt p {
+    text-transform: uppercase;
+    letter-spacing: 0.325rem;
+    font-weight: 400;
+    font-size: 0.8em;
+    padding: 0 1.25em;
+}
+
+#header-page.alt .inner {
+    -moz-transition: opacity 2s ease;
+    -webkit-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    transition: opacity 2s ease;
+    opacity: 1;
+}
+
+body.is-loading #header-page.alt:before {
+    background-color: black;
+}
+
+body.is-loading #header-page.alt .inner {
+    opacity: 0;
+}
+
+@media screen and (max-width: 736px) {
+    #header-page {
+        padding: 4em 2em 2em 2em;
+    }
+    #header-page.alt h1 {
+        font-size: 2.5em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #header-page.alt p {
+        padding: 0;
+    }
+    #header-page.alt .inner {
+        max-width: 20em;
+    }
+}
 /* Main */
 
 #main {
