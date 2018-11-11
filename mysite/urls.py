@@ -21,15 +21,6 @@ from django.views.static import serve
 from django.http import HttpResponseRedirect
 
 urlpatterns = [
-<<<<<<< HEAD
-    url(r'^$', include("tekotan.urls")),
-    url(r'^Sentiment_Analysis/', include('SentimentAnalysis.urls')),
-#    url(r'^recipe_extraction/', include('recipe_extraction.urls')),
-#    url(r'^calculator/', include('calculator.urls')),
-    url(r'^signup/', include("signup.urls")),
-    url(r'^admin/', admin.site.urls),
-    url(r'^static/(.*)$', serve, {'document_root': STATIC_ROOT, 'show_indexes' : False}),
-=======
     url(r"^$", include("tekotan.urls")),
     url(r"^Sentiment_Analysis/", include("SentimentAnalysis.urls")),
     #    url(r'^recipe_extraction/', include('recipe_extraction.urls')),
@@ -38,5 +29,4 @@ urlpatterns = [
     url(r"^admin/", admin.site.urls),
     url(r"^static/(.*)$", serve, {"document_root": STATIC_ROOT, "show_indexes": True}),
     url(r"^about_me/", include("about_me.urls")),
->>>>>>> 42efbd02bab2da6352fb279f85fd23476b5654db
 ]

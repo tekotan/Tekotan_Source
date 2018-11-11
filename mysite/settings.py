@@ -26,11 +26,7 @@ SECRET_KEY = "h2@i$zw89dm4%@4)7#i&gn&5h%c=b(k!p*(#&r=+84$cl3f3sv"
 DEBUG = True
 
 ALLOWED_HOSTS = ["www.tekotan.com", "127.0.0.1"]
-<<<<<<< HEAD
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-=======
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
->>>>>>> 42efbd02bab2da6352fb279f85fd23476b5654db
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "b.tanish@gmail.com"
