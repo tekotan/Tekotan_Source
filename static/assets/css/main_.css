@@ -1249,8 +1249,8 @@ table.alt tbody tr td {
 }
 
 #headermain.alt {
-    height: 60em;
-    min-height: 60em;
+    height: 44em;
+    min-height: 44em;
     min-height: 66vh;
 }
 
@@ -1602,7 +1602,7 @@ body.is-loading #header-page.alt .inner {
 }
 
 .toleft {
-  margin-right: 50%;
+  margin-right: 25%;
 }
 .dropdown {
   float: left;
