@@ -1662,3 +1662,54 @@ body.is-loading #header-page.alt .inner {
 .active{
   color:deepskyblue !important;
 }
+/* Form */
+
+
+
+.contactForm {
+    margin: 0 auto;
+}
+
+.contactForm input, textarea {
+    letter-spacing: 2px;
+    font: 200 1em/1.1em 'Helvetica Neue', sans-serif;
+
+    color: #000;
+    background-color: RGBA(204, 204, 204, .1);
+
+    outline: none; border: none;
+
+    display:block;
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contactForm textarea {
+  height: 150px;
+}
+
+.contactForm .formInput:focus {
+   background-color: deepskyblue;
+}
+
+.contactForm .formInput:hover {
+   background-color: deepskyblue;
+}
+
+::-webkit-input-placeholder {
+      color: #777;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+      color: #777;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #777;
+}
+
+:-ms-input-placeholder {
+       color: #777;
+}
