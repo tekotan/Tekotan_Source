@@ -15,7 +15,10 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+# SECURITY
+SECURE_BROWSER_XSS_FILTER = False  # True
+SESSION_COOKIE_SECURE = False  # True
+SECURE_SSL_REDIRECT = False  # True
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
@@ -29,9 +32,9 @@ ALLOWED_HOSTS = ["www.tekotan.com", "127.0.0.1"]
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "b.tanish@gmail.com"
+EMAIL_HOST_USER = "b.tanish@tugun.net"
 EMAIL_HOST_PASSWORD = "Ambition1"
-DEFAULT_FROM_EMAIL = "b.tanish@gmail.com"
+DEFAULT_FROM_EMAIL = "noreply@tekotan.com"
 EMAIL_PORT = 587
 
 # Application definition

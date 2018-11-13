@@ -1402,9 +1402,9 @@ body.is-loading #headermain.alt .inner {
 }
 
 #header-page.alt {
-    height: 30em;
-    min-height: 30em;
-    min-height: 66vh;
+    height: 5em;
+    min-height: 5em;
+    min-height: 50vh;
 }
 
 #header-page.alt:before {

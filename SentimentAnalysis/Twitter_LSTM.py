@@ -3,20 +3,29 @@ import re
 from random import randint
 from mysite.settings import STATIC_URL
 import os
-#Importing Data
+
+# Importing Data
 if os.path.isdir("tekotan.pythonanywhere.com/"):
-    wordsList = np.load('tekotan.pythonanywhere.com/' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordsList.npy')
+    wordsList = np.load(
+        "tekotan.pythonanywhere.com/"
+        + STATIC_URL
+        + "tensorboard/Numpy_Arrays/wordsList.npy"
+    )
     wordsList = wordsList.tolist()
-    wordsList = [word.decode('UTF-8') for word in wordsList]
-    wordVectors = np.load('tekotan.pythonanywhere.com/' + STATIC_URL + 'tensorboard/Numpy_Arrays/wordVectors.npy')
+    wordsList = [word.decode("UTF-8") for word in wordsList]
+    wordVectors = np.load(
+        "tekotan.pythonanywhere.com/"
+        + STATIC_URL
+        + "tensorboard/Numpy_Arrays/wordVectors.npy"
+    )
     strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
 else:
-    wordsList = np.load('static/tensorboard/Numpy_Arrays/wordsList.npy')
+    wordsList = np.load("static/tensorboard/Numpy_Arrays/wordsList.npy")
     wordsList = wordsList.tolist()
-    wordsList = [word.decode('UTF-8') for word in wordsList]
-    wordVectors = np.load('static/tensorboard/Numpy_Arrays/wordVectors.npy')
+    wordsList = [word.decode("UTF-8") for word in wordsList]
+    wordVectors = np.load("static/tensorboard/Numpy_Arrays/wordVectors.npy")
     strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
-#Helper Functions
+# Helper Functions
 
 # Importing Data
 if os.path.isdir("tekotan.pythonanywhere.com/"):
@@ -215,9 +224,16 @@ def results():
 sess = tf.InteractiveSession()
 saver = tf.train.Saver()
 if os.path.isdir("tekotan.pythonanywhere.com/"):
-    saver.restore(sess, tf.train.latest_checkpoint('tekotan.pythonanywhere.com/'+STATIC_URL +'/tensorboard/RNN2'))
+    saver.restore(
+        sess,
+        tf.train.latest_checkpoint(
+            "tekotan.pythonanywhere.com/" + STATIC_URL + "/tensorboard/RNN2"
+        ),
+    )
 else:
-    saver.restore(sess, tf.train.latest_checkpoint('C:/Users/btani/Google Drive/Work/Tekotan_git/Main/static/tensorboard/RNN2'))
+    saver.restore(
+        sess, tf.train.latest_checkpoint("D:/Tekotan_Source/static/tensorboard\RNN2")
+    )
 """
 import os
 import sys
