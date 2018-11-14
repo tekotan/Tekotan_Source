@@ -13,7 +13,13 @@
 <body>
 	<script type="text/javascript">
 	function set_banner_pic() {
-	  var images = ['../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg', '../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg', '../{{ STATIC_URL }}images/banner05.jpg', '../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg', '../{{ STATIC_URL }}images/banner08.jpg', '../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'];
+	  var images = [
+			'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
+			'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
+			'../{{ STATIC_URL }}images/banner05.jpg',
+			'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
+			'../{{ STATIC_URL }}images/banner08.jpg',
+			'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'];
 	  var elem = document.getElementById('headermain')
 		elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
 	}
@@ -22,18 +28,19 @@
 	<!-- Header -->
 	<header id="headermain" class="alt">
 		<div class="inner">
-			<h1>Tekotan</h1>
+			<h1>Tanish Baranwal's Online Portfolio</h1>
 			<p>A Way for A Student to Show His Progress</p>
 		</div>
 	</header>
 	<div class="nav-bar">
 		      <h3 class="nav-1 nav-pad active"><a class="nav-link" href="/">Home</a></h2>
 		      <h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
-		      <h3 class="nav-3 nav-pad"><a class="nav-link" href="#">Contact</a></h2>
+		      <h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
 					<div class="dropdown">
 					<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
 			    <div class="dropdown-content">
 			      <a href="#">Tensorflow Projects</a>
+						<a href="#">Projects from Computer Science Principles</a>
 			      <a href="#">Other Projects</a>
 					</div>
 				</div>
