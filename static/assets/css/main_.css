@@ -94,7 +94,7 @@ body {
 body, input, select, textarea {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 17pt;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.65;
 }
 
@@ -1712,4 +1712,7 @@ body.is-loading #header-page.alt .inner {
 
 :-ms-input-placeholder {
        color: #777;
+}
+.left {
+  text-align: left !important;
 }
