@@ -2,125 +2,126 @@
 <html>
 
 
-<head>
-	<title>Tekotan</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css"/>
-<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-</head>
+	<head>
+		<title>Tekotan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
 
-<body>
-	<script type="text/javascript">
-	function set_banner_pic() {
-	  var images = [
-			'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
-			'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
-			'../{{ STATIC_URL }}images/banner05.jpg',
-			'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
-			'../{{ STATIC_URL }}images/banner08.jpg',
-			'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'];
-	  var elem = document.getElementById('headermain')
-		elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
-	}
-	window.onload = set_banner_pic;
-</script>
-	<!-- Header -->
-	<header id="headermain" class="alt">
-		<div class="inner">
-			<h1>Tanish Baranwal's Online Portfolio</h1>
-			<p>A Way for A Student to Show His Progress</p>
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var images = [
+					'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
+					'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
+					'../{{ STATIC_URL }}images/banner05.jpg',
+					'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
+					'../{{ STATIC_URL }}images/banner08.jpg',
+					'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'
+				];
+				var elem = document.getElementById('headermain')
+				elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="headermain" class="alt">
+			<div class="inner">
+				<h1>Tanish Baranwal's Online Portfolio</h1>
+				<p>A Way for A Student to Show His Progress</p>
+			</div>
+		</header>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad active"><a class="nav-link" href="/">Home</a></h2>
+				<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+					<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+						<div class="dropdown">
+							<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
+								<div class="dropdown-content">
+									<a href="/tensorflow">Tensorflow Projects</a>
+									<a href="/csp">Projects from Computer Science Principles</a>
+									<a href="/other">Other Projects</a>
+								</div>
+						</div>
+						<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
 		</div>
-	</header>
-	<div class="nav-bar">
-		      <h3 class="nav-1 nav-pad active"><a class="nav-link" href="/">Home</a></h2>
-		      <h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
-		      <h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
-					<div class="dropdown">
-					<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
-			    <div class="dropdown-content">
-			      <a href="/tensorflow">Tensorflow Projects</a>
-						<a href="/csp">Projects from Computer Science Principles</a>
-			      <a href="/other">Other Projects</a>
-					</div>
-				</div>
-		      <h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
-		    </div>
-	<!-- Wrapper -->
-	<div id="wrapper">
+		<!-- Wrapper -->
+		<div id="wrapper">
 
 
-		<!-- Banner -->
-		<section id="intro" class="main">
-			<span class="icon fa-diamond major"></span>
-			<h2>About Me</h2>
-			<p>Hello! I am Tanish Baranwal and I am an aspiring programmer. My goal in life
-				is to become a researcher in Artificial Intelligence and have started my
-				journey in the field by taking many courses on Coursera. I have been programming
-				in python for 9 years and have already learned tensorflow, so am well prepared
-				for the world of programming and Artificial Intelligence, which has
-				recently been captivated by python. My other interests include math and physics.
-			<ul class="actions">
-				<li><a href="../about_me" class="button big">More About Me</a></li>
-			</ul>
-		</section>
+			<!-- Banner -->
+			<section id="intro" class="main">
+				<span class="icon fa-diamond major"></span>
+				<h2>About Me</h2>
+				<p>Hello! I am Tanish Baranwal and I am an aspiring programmer. My goal in life
+					is to become a researcher in Artificial Intelligence and have started my
+					journey in the field by taking many courses on Coursera. I have been programming
+					in python for 9 years and have already learned tensorflow, so am well prepared
+					for the world of programming and Artificial Intelligence, which has
+					recently been captivated by python. My other interests include math and physics.
+					<ul class="actions">
+						<li><a href="../about_me" class="button big">More About Me</a></li>
+					</ul>
+			</section>
 
-		<!-- Items -->
-		<section id="intro" class="main">
-			<header id="tensorflow">
-				<h2>Work Experience</h2>
-			</header>
-			<p>Read about my educational journey to reach my career goals!</p>
-			<ul class="actions">
-				<li><a href="../experience" class="button big">More About Me</a></li>
-			</ul>
-		</section>
-		<section id="intro" class="main">
-			<header id="tensorflow">
-				<h2>Tensorflow</h2>
-			</header>
-			<p>Major Projects I have made using Tensorflow, a powerful open source package for Deep Learning</p>
-			<ul class="actions">
-				<li><a href="../tensorflow" class="button big">More About Me</a></li>
-			</ul>
-		</section>
-		<section id="intro" class="main">
-			<header id="tensorflow">
-				<h2>CSP</h2>
-			</header>
-			<p></p>
-			<ul class="actions">
-				<li><a href="../csp" class="button big">More About Me</a></li>
-			</ul>
-		</section>
-		<section id="intro" class="main">
-			<header id="tensorflow">
-				<h2>Other</h2>
-			</header>
-			<p>Insert Details for the main projects, including information that each project will have a blog post.</p>
-			<ul class="actions">
-				<li><a href="../other" class="button big">More About Me</a></li>
-			</ul>
-		</section>
-		<!-- Main -->
+			<!-- Items -->
+			<section id="intro" class="main">
+				<header id="tensorflow">
+					<h2>Work Experience</h2>
+				</header>
+				<p>Read about my educational journey to reach my career goals!</p>
+				<ul class="actions">
+					<li><a href="../experience" class="button big">More About Me</a></li>
+				</ul>
+			</section>
+			<section id="intro" class="main">
+				<header id="tensorflow">
+					<h2>Tensorflow</h2>
+				</header>
+				<p>Major Projects I have made using Tensorflow, a powerful open source package for Deep Learning</p>
+				<ul class="actions">
+					<li><a href="../tensorflow" class="button big">More About Me</a></li>
+				</ul>
+			</section>
+			<section id="intro" class="main">
+				<header id="tensorflow">
+					<h2>CSP</h2>
+				</header>
+				<p></p>
+				<ul class="actions">
+					<li><a href="../csp" class="button big">More About Me</a></li>
+				</ul>
+			</section>
+			<section id="intro" class="main">
+				<header id="tensorflow">
+					<h2>Other</h2>
+				</header>
+				<p>Insert Details for the main projects, including information that each project will have a blog post.</p>
+				<ul class="actions">
+					<li><a href="../other" class="button big">More About Me</a></li>
+				</ul>
+			</section>
+			<!-- Main -->
 
 
 
 
-		<!-- Footer -->
-		<footer id="footer">
+			<!-- Footer -->
+			<footer id="footer">
 
-		</footer>
+			</footer>
 
-	</div>
+		</div>
 
-	<!-- Scripts -->
-	<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
 
-</body>
+	</body>
 
 </html>

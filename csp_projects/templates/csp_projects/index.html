@@ -2,113 +2,114 @@
 <html>
 
 
-<head>
-	<title>Tekotan</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css"/>
-<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-</head>
+	<head>
+		<title>Tekotan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
 
-<body>
-	<script type="text/javascript">
-	function set_banner_pic() {
-	  var images = [
-			'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
-			'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
-			'../{{ STATIC_URL }}images/banner05.jpg',
-			'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
-			'../{{ STATIC_URL }}images/banner08.jpg',
-			'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'];
-	  var elem = document.getElementById('header-page')
-		elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
-	}
-	window.onload = set_banner_pic;
-</script>
-	<!-- Header -->
-	<header id="header-page" class="alt">
-		<div class="inner">
-			<h1>Projects for CSP</h1>
-			<p>These projects are Done for the Computer Science Priciples class</p>
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var images = [
+					'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
+					'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
+					'../{{ STATIC_URL }}images/banner05.jpg',
+					'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
+					'../{{ STATIC_URL }}images/banner08.jpg',
+					'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'
+				];
+				var elem = document.getElementById('header-page')
+				elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="header-page" class="alt">
+			<div class="inner">
+				<h1>Projects for CSP</h1>
+				<p>These projects are Done for the Computer Science Priciples class</p>
+			</div>
+		</header>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+				<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+					<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+						<div class="dropdown">
+							<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link active">Projects</a></h2>
+								<div class="dropdown-content">
+									<a href="/tensorflow">Tensorflow Projects</a>
+									<a href="/csp" class="active">Projects from Computer Science Principles</a>
+									<a href="/other">Other Projects</a>
+								</div>
+						</div>
+						<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
 		</div>
-	</header>
-	<div class="nav-bar">
-		      <h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
-		      <h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
-		      <h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
-					<div class="dropdown">
-					<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link active">Projects</a></h2>
-			    <div class="dropdown-content">
-			      <a href="/tensorflow">Tensorflow Projects</a>
-						<a href="/csp" class="active">Projects from Computer Science Principles</a>
-			      <a href="/other">Other Projects</a>
-					</div>
-				</div>
-		      <h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
-		    </div>
-	<!-- Wrapper -->
-	<div id="wrapper">
+		<!-- Wrapper -->
+		<div id="wrapper">
 
 
-		<!-- Banner -->
+			<!-- Banner -->
 
-		<!-- Items -->
-		<section id="main" class="main">
-			<header id="tensorflow">
-				<h2>Computer Science Principles</h2>
-			</header>
-			<p>I am currently taking a computer science class in high school called
-				Computer Science Principles. In this class, the fundamentals of programming
-				are explored through means like Scratch, MIT App Inventor, Web Development, and
-				Python Programming</p>
-		</section>
-		<section class="main items">
-		<article class="item">
-			<header>
-				<a href="/Sentiment_Analysis"><img src="../{{ STATIC_URL }}images/pic020.jpg" alt="" /></a>
-				<h3>GreenBall Platform Game on Scratch</h3>
-			</header>
-			<p>
-				<strong>Duration: </strong>August 30, 2018 - September 9, 2019</br>
-				<strong>Partner: </strong>Abhishek Sarepaka
-				<strong>Platform: </strong><a href="scratch.mit.edu">Scratch</a></br>
-				<strong>Objective: </strong>To build a scratch game or animation with user interaction and multiple stages. </br>
-				<strong>Details: </strong>For the scratch project, we had to program a
-				scratch game or animation that had user interation along with multiple stages.
-				We chose to create a game because it appealed to our interests. We decided on creating a platform game with
-				realistic gravity effects and movement that agrees with the laws of physics. Since I had previous programming experience,
-				I took the lead in the design of the game, using my experience to teach my partner,
-				while my partner handled the asthetic aspects of the project like designing the levels
-				and characters of the game. Some challenges that arose was correctly modeling the
-				projectile motion of the ball during a jump. We worked around this by researching
-				the ways other people used in their own platform games and modeled our code after theirs.
-				This project taught me how to divide and conquer tasks based on the skills available between the two of us.
-				The documentation for this project can be found <a href="../{{ STATIC_URL }}Documentation/Scratch Project Documentation.pdf">here.</a>
-			</p>
-			<ul class="actions">
-				<li><a href="https://scratch.mit.edu/projects/244063081/" class="button">Click Here to view</a></li>
-			</ul>
-		</article>
-		</section>
-		<!-- Main -->
+			<!-- Items -->
+			<section id="main" class="main">
+				<header id="tensorflow">
+					<h2>Computer Science Principles</h2>
+				</header>
+				<p>I am currently taking a computer science class in high school called
+					Computer Science Principles. In this class, the fundamentals of programming
+					are explored through means like Scratch, MIT App Inventor, Web Development, and
+					Python Programming</p>
+			</section>
+			<section class="main items">
+				<article class="item">
+					<header>
+						<a href="/Sentiment_Analysis"><img src="../{{ STATIC_URL }}images/pic020.jpg" alt="" /></a>
+						<h3>GreenBall Platform Game on Scratch</h3>
+					</header>
+					<p>
+						<strong>Duration: </strong>August 30, 2018 - September 9, 2019</br>
+						<strong>Partner: </strong>Abhishek Sarepaka
+						<strong>Platform: </strong><a href="scratch.mit.edu">Scratch</a></br>
+						<strong>Objective: </strong>To build a scratch game or animation with user interaction and multiple stages. </br>
+						<strong>Details: </strong>For the scratch project, we had to program a
+						scratch game or animation that had user interation along with multiple stages.
+						We chose to create a game because it appealed to our interests. We decided on creating a platform game with
+						realistic gravity effects and movement that agrees with the laws of physics. Since I had previous programming experience,
+						I took the lead in the design of the game, using my experience to teach my partner,
+						while my partner handled the asthetic aspects of the project like designing the levels
+						and characters of the game. Some challenges that arose was correctly modeling the
+						projectile motion of the ball during a jump. We worked around this by researching
+						the ways other people used in their own platform games and modeled our code after theirs.
+						This project taught me how to divide and conquer tasks based on the skills available between the two of us.
+						The documentation for this project can be found <a href="../{{ STATIC_URL }}Documentation/Scratch Project Documentation.pdf">here.</a>
+					</p>
+					<ul class="actions">
+						<li><a href="https://scratch.mit.edu/projects/244063081/" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+			</section>
+			<!-- Main -->
 
 
 
 
-		<!-- Footer -->
-		<footer id="footer">
+			<!-- Footer -->
+			<footer id="footer">
 
-		</footer>
+			</footer>
 
-	</div>
+		</div>
 
-	<!-- Scripts -->
-	<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
 
-</body>
+	</body>
 
 </html>
