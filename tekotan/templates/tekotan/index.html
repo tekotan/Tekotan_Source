@@ -3,7 +3,7 @@
 
 
 	<head>
-		<title>Tekotan</title>
+		<title>Online Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
@@ -13,16 +13,10 @@
 	<body>
 		<script type="text/javascript">
 			function set_banner_pic() {
-				var images = [
-					'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
-					'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
-					'../{{ STATIC_URL }}images/banner05.jpg',
-					'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
-					'../{{ STATIC_URL }}images/banner08.jpg',
-					'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'
-				];
 				var elem = document.getElementById('headermain')
-				elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
 			}
 			window.onload = set_banner_pic;
 		</script>
@@ -62,56 +56,63 @@
 					for the world of programming and Artificial Intelligence, which has
 					recently been captivated by python. My other interests include math and physics.
 					<ul class="actions">
-						<li><a href="../about_me" class="button big">More About Me</a></li>
+						<li><a href="/about_me" class="button big">More About Me</a></li>
 					</ul>
 			</section>
-
-			<!-- Items -->
-			<section id="intro" class="main">
-				<header id="tensorflow">
-					<h2>Work Experience</h2>
-				</header>
-				<p>Read about my educational journey to reach my career goals!</p>
-				<ul class="actions">
-					<li><a href="../experience" class="button big">More About Me</a></li>
-				</ul>
-			</section>
-			<section id="intro" class="main">
-				<header id="tensorflow">
-					<h2>Tensorflow</h2>
-				</header>
-				<p>Major Projects I have made using Tensorflow, a powerful open source package for Deep Learning</p>
-				<ul class="actions">
-					<li><a href="../tensorflow" class="button big">More About Me</a></li>
-				</ul>
-			</section>
-			<section id="intro" class="main">
-				<header id="tensorflow">
-					<h2>CSP</h2>
-				</header>
-				<p></p>
-				<ul class="actions">
-					<li><a href="../csp" class="button big">More About Me</a></li>
-				</ul>
-			</section>
-			<section id="intro" class="main">
-				<header id="tensorflow">
-					<h2>Other</h2>
-				</header>
-				<p>Insert Details for the main projects, including information that each project will have a blog post.</p>
-				<ul class="actions">
-					<li><a href="../other" class="button big">More About Me</a></li>
-				</ul>
-			</section>
 			<!-- Main -->
+			<section class="main items">
+				<article class="item">
+					<header>
+						<a href="/experience"><img src="../{{ STATIC_URL }}images/pic009.jpg" alt="" /></a>
+						<h3>Work Experience</h3>
+					</header>
+					<p>Read about my educational journey to reach my career goals!</p>
+					<ul class="actions">
+						<li><a href="/experience" class="button">Read More</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="/tensorflow"><img src="../{{ STATIC_URL }}images/pic020.jpg" alt="" /></a>
+						<h3>Tensorflow</h3>
+					</header>
+					<p>Major Projects I have made using Tensorflow, a powerful open source package for Deep Learning</p>
+					<ul class="actions">
+						<li><a href="/tensorflow" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="/csp"><img src="../{{ STATIC_URL }}images/pic017.jpg" alt="" /></a>
+						<h3>CSP</h3>
+					</header>
+					<p>
+						My freshman year I am taking a class called Computer Science Principles,
+						a class that covers computer and programming concepts
+					</p>
+					<ul class="actions">
+						<li><a href="/csp" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="/other"><img src="../{{ STATIC_URL }}images/pic014.jpg" alt="" /></a>
+						<h3>Other Projects</h3>
+					</header>
+					<p>These are other old projects I have made. These were all for fun,
+						and have no documentation or detailed description attached. Just a
+						simple heading, and the actual project exists for these.</p>
+					<ul class="actions">
+						<li><a href="/other" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
 
 
 
+				<!-- Footer -->
+				<footer id="footer">
 
-			<!-- Footer -->
-			<footer id="footer">
-
-			</footer>
+				</footer>
 
 		</div>
 

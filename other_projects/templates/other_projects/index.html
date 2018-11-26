@@ -2,185 +2,180 @@
 <html>
 
 
-<head>
-	<title>Tekotan</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css"/>
-<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-</head>
+	<head>
+		<title>Other Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
 
-<body>
-	<script type="text/javascript">
-	function set_banner_pic() {
-	  var images = [
-			'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
-			'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
-			'../{{ STATIC_URL }}images/banner05.jpg',
-			'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
-			'../{{ STATIC_URL }}images/banner08.jpg',
-			'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'];
-	  var elem = document.getElementById('header-page')
-		elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
-	}
-	window.onload = set_banner_pic;
-</script>
-	<!-- Header -->
-	<header id="header-page" class="alt">
-		<div class="inner">
-			<h1>Other Projects</h1>
-			<p>Miscellanious Projects I've Worked On Over the Years for Fun</p>
-		</div>
-	</header>
-	<div class="nav-bar">
-		      <h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
-		      <h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
-		      <h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
-					<div class="dropdown">
-					<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link active">Projects</a></h2>
-			    <div class="dropdown-content">
-			      <a href="/tensorflow">Tensorflow Projects</a>
-						<a href="/csp">Projects from Computer Science Principles</a>
-			      <a href="/other" class="active">Other Projects</a>
-					</div>
-				</div>
-		      <h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
-		    </div>
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Items -->
-	<section id="main" class="main">
-		<header id="Other">
-			<h2>Other Projects</h2>
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var elem = document.getElementById('header-page')
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="header-page" class="alt">
+			<div class="inner">
+				<h1>Other Projects</h1>
+				<p>Miscellanious Projects I've Worked On Over the Years for Fun</p>
+			</div>
 		</header>
-		<p>These projects are miscellanious creations I have made using vanilla html,
-			 css and javascript without any plugins or other addons, unless specified in the project definition. These projects are
-			  arranged in reverse cronological order</p>
-	</section>
-		<section class="main items">
-			<span id="myprojects"></span>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}Earth Sun And Code/index.html"><img src="../{{ STATIC_URL }}images/pic006.jpg" alt="" /></a>
-					<h3>Earth Sun and Code</h3>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+				<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+					<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+						<div class="dropdown">
+							<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link active">Projects</a></h2>
+								<div class="dropdown-content">
+									<a href="/tensorflow">Tensorflow Projects</a>
+									<a href="/csp">Projects from Computer Science Principles</a>
+									<a href="/other" class="active">Other Projects</a>
+								</div>
+						</div>
+						<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
+		</div>
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Items -->
+			<section id="main" class="main">
+				<header id="Other">
+					<h2>Other Projects</h2>
 				</header>
-				<p>This is a great way to memorize your solar system stats in an interactive way. This was one of the few projects that
-					took me more than a few days to program.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}Earth Sun And Code/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}fireworks/index.html"><img src="../{{ STATIC_URL }}images/pic007.jpg" alt="" /></a>
-					<h3>Fireworks</h3>
-				</header>
-				<p>This was supposed to be for the Fourth of July but I finished 3 days late so I tweaked it a bit and put it on today.
-				</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}fireworks/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}game of Balls/index.html"><img src="../{{ STATIC_URL }}images/pic009.jpg" alt="" /></a>
-					<h3>A Game of Balls</h3>
-				</header>
-				<p>This is my first real game I made.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}game of Balls/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}paint/index.html"><img src="../{{ STATIC_URL }}images/pic011.jpg" alt="" /></a>
-					<h3>Paint</h3>
-				</header>
-				<p>Simple copy of microsoft paint with some different colors and brushes.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}paint/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}Pong/index.html"><img src="../{{ STATIC_URL }}images/pic014.jpg" alt="" /></a>
-					<h3>Pong</h3>
-				</header>
-				<p>A game that was popular in the old days.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}Pong/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}scientific calculator/index.html"><img src="../{{ STATIC_URL }}images/pic015.jpg" alt="" /></a>
-					<h3>Scientific Calculator</h3>
-				</header>
-				<p>This is another other project that took me more than a few days.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}scientific calculator/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}searchnearby/index.html"><img src="../{{ STATIC_URL }}images/pic016.jpg" alt="" /></a>
-					<h3>Google Map Api Search Nearby</h3>
-				</header>
-				<p>A project using Google Map Api, it allows you to look for certain places around a location.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}searchnearby/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}Tower Of Hanoi/index.html"><img src="../{{ STATIC_URL }}images/pic017.jpg" alt="" /></a>
-					<h3>Tower of Hanoi</h3>
-				</header>
-				<p>This is a very strategic game. Even I can't beat it sometimes.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}Tower Of Hanoi/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}AnimatedAnimals/index.html"><img src="../{{ STATIC_URL }}images/pic018.jpg" alt="" /></a>
-					<h3>Animated Animals</h3>
-				</header>
-				<p>This was for my sister. I used a tutorial at <a href="http://tympanus.net/codrops/2016/03/21/animated-animals-css-svg/">codrops</a>.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}AnimatedAnimals/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-			<article class="item">
-				<header>
-					<a href="../{{ STATIC_URL }}TheAviator/index.html"><img src="../{{ STATIC_URL }}images/pic019.jpg" alt="" /></a>
-					<h3>The Aviator</h3>
-				</header>
-				<p>Trying out threejs. I used a tutorial at <a href="http://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/">codrops</a>.</p>
-				<ul class="actions">
-					<li><a href="../{{ STATIC_URL }}TheAviator/index.html" class="button">Click Here to view</a></li>
-				</ul>
-			</article>
-		</section>
-		<!-- Main -->
+				<p>These projects are miscellanious creations I have made using vanilla html,
+					css and javascript without any plugins or other addons, unless specified in the project definition. These projects are
+					arranged in reverse cronological order</p>
+			</section>
+			<section class="main items">
+				<span id="myprojects"></span>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}Earth Sun And Code/index.html"><img src="../{{ STATIC_URL }}images/pic006.jpg" alt="" /></a>
+						<h3>Earth Sun and Code</h3>
+					</header>
+					<p>This is a great way to memorize your solar system stats in an interactive way. This was one of the few projects that
+						took me more than a few days to program.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}Earth Sun And Code/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}fireworks/index.html"><img src="../{{ STATIC_URL }}images/pic007.jpg" alt="" /></a>
+						<h3>Fireworks</h3>
+					</header>
+					<p>This was supposed to be for the Fourth of July but I finished 3 days late so I tweaked it a bit and put it on today.
+					</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}fireworks/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}game of Balls/index.html"><img src="../{{ STATIC_URL }}images/pic009.jpg" alt="" /></a>
+						<h3>A Game of Balls</h3>
+					</header>
+					<p>This is my first real game I made.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}game of Balls/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}paint/index.html"><img src="../{{ STATIC_URL }}images/pic011.jpg" alt="" /></a>
+						<h3>Paint</h3>
+					</header>
+					<p>Simple copy of microsoft paint with some different colors and brushes.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}paint/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}Pong/index.html"><img src="../{{ STATIC_URL }}images/pic014.jpg" alt="" /></a>
+						<h3>Pong</h3>
+					</header>
+					<p>A game that was popular in the old days.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}Pong/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}scientific calculator/index.html"><img src="../{{ STATIC_URL }}images/pic015.jpg" alt="" /></a>
+						<h3>Scientific Calculator</h3>
+					</header>
+					<p>This is another other project that took me more than a few days.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}scientific calculator/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}searchnearby/index.html"><img src="../{{ STATIC_URL }}images/pic016.jpg" alt="" /></a>
+						<h3>Google Map Api Search Nearby</h3>
+					</header>
+					<p>A project using Google Map Api, it allows you to look for certain places around a location.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}searchnearby/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}Tower Of Hanoi/index.html"><img src="../{{ STATIC_URL }}images/pic017.jpg" alt="" /></a>
+						<h3>Tower of Hanoi</h3>
+					</header>
+					<p>This is a very strategic game. Even I can't beat it sometimes.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}Tower Of Hanoi/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}AnimatedAnimals/index.html"><img src="../{{ STATIC_URL }}images/pic018.jpg" alt="" /></a>
+						<h3>Animated Animals</h3>
+					</header>
+					<p>This was for my sister. I used a tutorial at <a href="http://tympanus.net/codrops/2016/03/21/animated-animals-css-svg/">codrops</a>.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}AnimatedAnimals/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href="../{{ STATIC_URL }}TheAviator/index.html"><img src="../{{ STATIC_URL }}images/pic019.jpg" alt="" /></a>
+						<h3>The Aviator</h3>
+					</header>
+					<p>Trying out threejs. I used a tutorial at <a href="http://tympanus.net/codrops/2016/04/26/the-aviator-animating-basic-3d-scene-threejs/">codrops</a>.</p>
+					<ul class="actions">
+						<li><a href="../{{ STATIC_URL }}TheAviator/index.html" class="button">Click Here to view</a></li>
+					</ul>
+				</article>
+			</section>
+			<!-- Main -->
 
 
 
 
-		<!-- Footer -->
-		<footer id="footer">
+			<!-- Footer -->
+			<footer id="footer">
 
-		</footer>
+			</footer>
 
-	</div>
+		</div>
 
-	<!-- Scripts -->
-	<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
-	<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
 
-</body>
+	</body>
 
 </html>

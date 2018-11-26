@@ -3,7 +3,7 @@
 
 
 	<head>
-		<title>Tekotan</title>
+		<title>CSP Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
@@ -13,16 +13,10 @@
 	<body>
 		<script type="text/javascript">
 			function set_banner_pic() {
-				var images = [
-					'../{{ STATIC_URL }}images/banner01.jpg', '../{{ STATIC_URL }}images/banner02.jpg',
-					'../{{ STATIC_URL }}images/banner03.jpg', '../{{ STATIC_URL }}images/banner04.jpg',
-					'../{{ STATIC_URL }}images/banner05.jpg',
-					'../{{ STATIC_URL }}images/banner06.jpg', '../{{ STATIC_URL }}images/banner07.jpg',
-					'../{{ STATIC_URL }}images/banner08.jpg',
-					'../{{ STATIC_URL }}images/banner09.jpg', '../{{ STATIC_URL }}images/banner10.jpg'
-				];
 				var elem = document.getElementById('header-page')
-				elem.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * (10))] + ')';
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
 			}
 			window.onload = set_banner_pic;
 		</script>
