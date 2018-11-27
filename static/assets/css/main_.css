@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
-/* Reset */
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400"); /* Reset */
+
 a,
 abbr,
 acronym,
@@ -135,6 +135,7 @@ body {
   -webkit-text-size-adjust: none;
 }
 /* Box Model */
+
 *,
 *:after,
 *:before {
@@ -174,6 +175,7 @@ body.is-loading *:before {
   transition: none !important;
 }
 /* Type */
+
 body {
   background-color: #f4f4f4;
   color: #666666;
@@ -185,7 +187,7 @@ select,
 textarea {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 17pt;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.65;
 }
 @media screen and (max-width: 1680px) {
@@ -405,6 +407,7 @@ hr {
   border-bottom-color: #666666;
 }
 /* Box */
+
 .box {
   border-radius: 4px;
   border: solid 1px;
@@ -428,6 +431,7 @@ hr {
   border-color: #666666;
 }
 /* Button */
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -547,6 +551,7 @@ button.icon:before,
   color: #999999;
 }
 /* Form */
+
 form {
   margin: 0 0 2em;
 }
@@ -783,6 +788,7 @@ input[type="radio"]:focus + label:before {
   color: #999999 !important;
 }
 /* Icon */
+
 .icon {
   text-decoration: none;
   border-bottom: none;
@@ -824,6 +830,7 @@ input[type="radio"]:focus + label:before {
   }
 }
 /* Image */
+
 .image {
   border-radius: 4px;
   border: 0;
@@ -878,6 +885,7 @@ input[type="radio"]:focus + label:before {
   width: 100%;
 }
 /* List */
+
 ol {
   list-style: decimal;
   margin: 0 0 2em;
@@ -1042,6 +1050,7 @@ ul.alt li {
   border-top-color: #666666;
 }
 /* Table */
+
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
@@ -1127,6 +1136,7 @@ table.alt tbody tr td {
   border-color: #666666;
 }
 /* Item */
+
 .item {
   padding: 3em 3em 1em;
   background-color: #ffffff;
@@ -1312,6 +1322,7 @@ table.alt tbody tr td {
   }
 }
 /* Wrapper */
+
 #wrapper {
   width: 64em;
   margin: 0 auto;
@@ -1342,6 +1353,7 @@ table.alt tbody tr td {
   }
 }
 /* header */
+
 #headermain {
   background-color: #444;
   color: rgba(255, 255, 255, 0.75);
@@ -1503,6 +1515,7 @@ body.is-loading #headermain.alt .inner {
   }
 }
 /* header-page */
+
 #header-page {
   background-color: #444;
   color: rgba(255, 255, 255, 0.75);
@@ -1664,6 +1677,7 @@ body.is-loading #header-page.alt .inner {
   }
 }
 /* Main */
+
 #main {
   padding: 4em 4em 2em;
   background-color: #ffffff;
@@ -1684,6 +1698,7 @@ body.is-loading #header-page.alt .inner {
   }
 }
 /* Intro */
+
 #intro {
   padding: 4em 4em 2em;
   background-color: #ffffff;
@@ -1705,6 +1720,7 @@ body.is-loading #header-page.alt .inner {
   }
 }
 /* CTA */
+
 #cta {
   padding: 2em 0 0.1em;
   text-align: center;
@@ -1724,6 +1740,7 @@ body.is-loading #header-page.alt .inner {
   }
 }
 /* Footer */
+
 #footer {
   text-align: center;
   margin-top: 4em;
@@ -1755,6 +1772,7 @@ body.is-loading #header-page.alt .inner {
   }
 }
 /* Nav Bar */
+
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -1789,7 +1807,6 @@ body.is-loading #header-page.alt .inner {
   overflow: hidden;
 }
 /* Dropdown button */
-
 .dropdown .dropbtn {
   border: none;
   outline: none;
@@ -1801,7 +1818,6 @@ body.is-loading #header-page.alt .inner {
   /* Important for vertical align on mobile phones */
 }
 /* Dropdown content (hidden by default) */
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -1811,7 +1827,6 @@ body.is-loading #header-page.alt .inner {
   z-index: 1;
 }
 /* Links inside the dropdown */
-
 .dropdown-content a {
   float: none;
   color: #666666;
@@ -1821,12 +1836,10 @@ body.is-loading #header-page.alt .inner {
   text-align: left;
 }
 /* Add a grey background color to dropdown links on hover */
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 /* Show the dropdown menu on hover */
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -1848,6 +1861,7 @@ body.is-loading #header-page.alt .inner {
   color: deepskyblue !important;
 }
 /* Form */
+
 .contactForm {
   margin: 0 auto;
 }
