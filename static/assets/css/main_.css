@@ -156,6 +156,16 @@ body {
     min-width: 320px;
   }
 }
+@media only screen and (max-width: 780px) {
+  .nav-bar {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 780px) {
+  #small_contact {
+    display: none !important;
+  }
+}
 
 body {
   background: #f4f4f4;
@@ -834,6 +844,12 @@ input[type="radio"]:focus + label:before {
 .image img {
   border-radius: 4px;
   display: block;
+}
+
+.profile_pic {
+  object-fit: cover !important;
+  width: 300px;
+  height: auto;
 }
 
 .image.left,
@@ -1900,4 +1916,3 @@ textarea {
 .left {
   text-align: left !important;
 }
-/*Responsive nav_bar*/

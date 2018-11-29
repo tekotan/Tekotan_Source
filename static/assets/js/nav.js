@@ -9,14 +9,4 @@ $(document).ready(function() {
       $('.nav-1').removeClass('toleft');
     }
   });
-  $(".toggle").click(function() {
-    $('.links').slideToggle();
-  });
-  $(window).resize(function() {
-    if ($(window).width() > 768) {
-      $('.links').show();
-    } else {
-      $('.links').hide();
-    }
-  });
 });
