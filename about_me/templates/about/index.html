@@ -106,16 +106,16 @@
 					about me and I hope you enjoy exploring my website.
 				</p>
 				<ul class="actions">
-					<li><a href="https://gitbub.com/tekotan" class="button big">View My Github Profile</a></li>
+					<li><a href="https://github.com/tekotan" class="button big">View My Github Profile</a></li>
 					<li><a href="https://medium.com/@b.tanish" class="button big">View My Medium Profile</a></li>
 				</ul>
 			</section>
-			<article class="item">
+			<article class="item" id="contactForm">
 				<header>
 					<a src=""><img src="../{{ STATIC_URL }}images/pic021.jpg" alt="" /></a>
 					<h3>Contact Me Here</h3>
 				</header>
-				<form class="contactForm" id="contactForm" method="POST">
+				<form class="contactForm" method="POST">
 					{% csrf_token %}
 					<input name="name" class="formInput contactForm" type="text" id="name" name="name" autocorrect="off" placeholder="Name?" />
 					<input name="email" class="formInput contactForm" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?" />

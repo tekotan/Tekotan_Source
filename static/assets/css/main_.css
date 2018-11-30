@@ -1888,11 +1888,11 @@ textarea {
 }
 
 .contactForm .formInput:focus {
-  background-color: deepskyblue;
+  background-color: lightskyblue;
 }
 
 .contactForm .formInput:hover {
-  background-color: deepskyblue;
+  background-color: lightskyblue;
 }
 
 ::-webkit-input-placeholder {
