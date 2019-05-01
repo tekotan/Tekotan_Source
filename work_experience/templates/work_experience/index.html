@@ -2,122 +2,133 @@
 <html>
 
 
-	<head>
-		<title>Work Experience</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
-		<link rel="icon" type="image/png" href="../{{ STATIC_URL }}images/favicon.png">
-		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-	</head>
+<head>
+	<title>Work Experience</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+	<link rel="icon" type="image/png" href="../{{ STATIC_URL }}images/favicon.png">
+	<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+</head>
 
-	<body>
-		<script type="text/javascript">
-			function set_banner_pic() {
-				var elem = document.getElementById('header-page')
-				var n = Math.floor(Math.random() * (15))
-				var conv_n = n > 9 ? "" + n : "0" + n
-				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
-			}
-			window.onload = set_banner_pic;
-		</script>
-		<!-- Header -->
-		<header id="header-page" class="alt">
-			<div class="inner">
-				<h1>Work Experience</h1>
-				<p>More about my Experience in the field</p>
-			</div>
-		</header>
-		<div class="nav-bar">
-			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
-			</h3>
-			<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
-			</h3>
-			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
-			</h3>
-			<div class="dropdown">
-				<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
-				</h3>
-				<div class="dropdown-content">
-					<a href="/tensorflow">Tensorflow Projects</a>
-					<a href="/csp">Projects from Computer Science Principles</a>
-					<!--<a href="/other">Other Projects</a>-->
-					<!-- Above is the link to other projects, which I am disabling because they are not accompanied by any documentation -->
-				</div>
-			</div>
-			<h3 class="nav-5 nav-pad active"><a class="nav-link" href="/experience">Work Experience</a></h2>
-			</h3>
+<body>
+	<script type="text/javascript">
+		function set_banner_pic() {
+			var elem = document.getElementById('header-page')
+			var n = Math.floor(Math.random() * (15))
+			var conv_n = n > 9 ? "" + n : "0" + n
+			elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+		}
+		window.onload = set_banner_pic;
+	</script>
+	<!-- Header -->
+	<header id="header-page" class="alt">
+		<div class="inner">
+			<h1>Work Experience</h1>
+			<p>More about my Experience in the field</p>
 		</div>
-		<!-- Wrapper -->
-		<div id="wrapper">
+	</header>
+	<div class="nav-bar">
+		<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+		</h3>
+		<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+		</h3>
+		<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+		</h3>
+		<div class="dropdown">
+			<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
+			</h3>
+			<div class="dropdown-content">
+				<a href="/tensorflow">Tensorflow Projects</a>
+				<a href="/csp">Projects from Computer Science Principles</a>
+				<!--<a href="/other">Other Projects</a>-->
+				<!-- Above is the link to other projects, which I am disabling because they are not accompanied by any documentation -->
+			</div>
+		</div>
+		<h3 class="nav-5 nav-pad active"><a class="nav-link" href="/experience">Work Experience</a></h2>
+		</h3>
+	</div>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
 
-			<!-- Banner -->
-			<section id="intro" class="main">
-				<span class="icon fa-diamond major"></span>
-				<h2>Resume</h2>
-				<p class='left'>
-					<h3 class="left">Tanish Baranwal</h3>
-					<h4 class="left">CAREER GOALS</h4>
-					<p class="left">
-						Goal for the future is to obtain a PhD in artificial intelligence from a good college and contribute to the digital revolution.
-					</p>
-					<h4 class="left">EDUCATION</h4>
-					<p class="left">
-						Dublin High School, Dublin — Full Time Student </br>
-						Duration: August 2018 - June 2022 </br>
-						Freshman in Dublin High School, Has taken math courses up to Algebra 2, currently taking Honors Chemistry </br>
-						Colleges Goals: To study artificial intelligence at colleges such as MIT, Harvard, Stanford, or CMU.
-					</p>
-					<h4 class="left">Work and Volunteer Experience</h4>
-					<p class="left">
-						Currently involved in a commercial project involving using Deep Learning techniques
-						to detect fraudulent credit card transactions in parking garages throughout the country,
-						where the specific role in the project is to be a data scientist applying Deep Learning
-						in the task. </br>
-						In the summer of 2018, has created and managed a tutoring service for children requiring extra academic
-						support.
-					</p>
-					<h4 class="left">Skills</h4>
-					<p class="left">
-						Currently in French 2, has plans of continuing to AP level French</br>
-						Has been coding for 9 years, since first grade, advanced level Python programmer, proficient in using Tensorflow for deep learning tasks </br>
-						Completed Deep Learning, a 5-course specialization by deeplearning.ai on Coursera. Specialization Certificate earned on June 4, 2018. Link
-						<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3HQGNCJCU8KY">here</a>
-					</p>
-					<h4 class="left">EXTRACURRICULAR ACTIVITIES</h4>
-					<p class="left">
-						Swims for the Pleasanton Seahawks </br>
-						<a href="https://www.ohs.stanford.edu">Stanford Online High School </a> </br>
-						Math Competitions: Purple Comet 2017 and 2018, Math Olympiad Highest
-						Individual Scorer Award 3 times 2016-2018, AMC 8/10 </br>
-
-					</p>
+		<!-- Banner -->
+		<section id="intro" class="main">
+			<span class="icon fa-diamond major"></span>
+			<object data="../{{ STATIC_URL }}Website_pdfs/Resume.pdf" type="application/pdf" width="1000px" height="1130px">
+				<embed src="http://yoursite.com/the.pdf" type="application/pdf">
+				<p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+				</embed>
+			</object>
+		<!--	<h2>Resume</h2>
+			<p class='left'>
+				<h3 class="left">Tanish Baranwal</h3>
+				<h4 class="left">Career Goals</h4>
+				<p class="left">
+					Goal for the future is to obtain a PhD in artificial intelligence from a good college and contribute to the digital revolution.
 				</p>
-				<ul class="actions">
-				</ul>
-			</section>
+				<h4 class="left">Education</h4>
+				<p class="left">
+					Dublin High School, Dublin — Full Time Student </br>
+					Duration: August 2018 - June 2022 </br>
+					Freshman in Dublin High School, Has taken math courses up to Algebra 2, currently taking Honors Chemistry </br>
+					Colleges Goals: To study artificial intelligence at colleges such as MIT, Harvard, Stanford, or CMU.
+				</p>
+				<p class="left">
+					Stanford Online High School, Stanford — Part Time Student </br>
+					Duration: August 2018 - June 2022 </br>
+					Part time student at Stanford Online High School, taking courses not available at Dublin High. Currently taken Honors Physiscs
+				</p>
+				<h4 class="left">Work and Volunteer Experience</h4>
+				<p class="left">
 
-			<!-- Items -->
-			<!-- Main -->
+					Currently involved in a commercial project involving using Deep Learning techniques
+					to detect fraudulent credit card transactions in parking garages throughout the country,
+					where the specific role in the project is to be a data scientist applying Deep Learning
+					in the task. </br>
+					In the summer of 2018, has created and managed a tutoring service for children requiring extra academic
+					support.
+				</p>
+				<h4 class="left">Skills</h4>
+				<p class="left">
+					Currently in French 2, has plans of continuing to AP level French</br>
+					Has been coding for 9 years, since first grade, advanced level Python programmer, proficient in using Tensorflow for deep learning tasks </br>
+					Completed Deep Learning, a 5-course specialization by deeplearning.ai on Coursera. Specialization Certificate earned on June 4, 2018. Link
+					<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3HQGNCJCU8KY">here</a>
+				</p>
+				<h4 class="left">EXTRACURRICULAR ACTIVITIES</h4>
+				<p class="left">
+					Swims for the Pleasanton Seahawks </br>
+					<a href="https://www.ohs.stanford.edu">Stanford Online High School </a> </br>
+					Math Competitions: Purple Comet 2017 and 2018, Math Olympiad Highest
+					Individual Scorer Award 3 times 2016-2018, AMC 8/10 </br>
+
+				</p>
+			</p>
+			<ul class="actions">
+			</ul> -->
+		</section>
+
+		<!-- Items -->
+		<!-- Main -->
 
 
 
 
-			<!-- Footer -->
-			<footer id="footer">
+		<!-- Footer -->
+		<footer id="footer">
 
-			</footer>
+		</footer>
 
-		</div>
+	</div>
 
-		<!-- Scripts -->
-		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
-		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
-		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
-		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
-		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+	<!-- Scripts -->
+	<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+	<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+	<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+	<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+	<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
 
-	</body>
+</body>
 
 </html>
