@@ -6,18 +6,18 @@ import os
 
 # Importing Data
 if os.path.isdir("tekotan.pythonanywhere.com/"):
-    wordsList = np.load(
-        "tekotan.pythonanywhere.com/"
-        + STATIC_URL
-        + "tensorboard/Numpy_Arrays/wordsList.npy"
-    )
+    wordsList = np.load(os.path.abspath("/home/tekotan/tekotan.pythonanywhere.com/static/tensorboard/Numpy_Arrays/wordsList.npy"))
+#        "tekotan.pythonanywhere.com/"
+#        + STATIC_URL
+#        + "tensorboard/Numpy_Arrays/wordsList.npy"
+#    )
     wordsList = wordsList.tolist()
     wordsList = [word.decode("UTF-8") for word in wordsList]
-    wordVectors = np.load(
-        "tekotan.pythonanywhere.com/"
-        + STATIC_URL
-        + "tensorboard/Numpy_Arrays/wordVectors.npy"
-    )
+    wordVectors = np.load(os.path.abspath("/home/tekotan/tekotan.pythonanywhere.com/static/tensorboard/Numpy_Arrays/wordVectors.npy"))
+#        "tekotan.pythonanywhere.com/"
+#        + STATIC_URL
+#        + "tensorboard/Numpy_Arrays/wordVectors.npy"
+#    )
     strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
 else:
     wordsList = np.load("static/tensorboard/Numpy_Arrays/wordsList.npy")
@@ -25,30 +25,6 @@ else:
     wordsList = [word.decode("UTF-8") for word in wordsList]
     wordVectors = np.load("static/tensorboard/Numpy_Arrays/wordVectors.npy")
     strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
-# Helper Functions
-
-# Importing Data
-if os.path.isdir("tekotan.pythonanywhere.com/"):
-    wordsList = np.load(
-        "tekotan.pythonanywhere.com/"
-        + STATIC_URL
-        + "tensorboard/Numpy_Arrays/wordsList.npy"
-    )
-    wordsList = wordsList.tolist()
-    wordsList = [word.decode("UTF-8") for word in wordsList]
-    wordVectors = np.load(
-        "tekotan.pythonanywhere.com/"
-        + STATIC_URL
-        + "tensorboard/Numpy_Arrays/wordVectors.npy"
-    )
-    strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
-else:
-    wordsList = np.load("static/tensorboard/Numpy_Arrays/wordsList.npy")
-    wordsList = wordsList.tolist()
-    wordsList = [word.decode("UTF-8") for word in wordsList]
-    wordVectors = np.load("static/tensorboard/Numpy_Arrays/wordVectors.npy")
-    strip_special_chars = re.compile("[^A-Za-z0-9 ]+")
-
 # Helper Functions
 def cleanSentences(string):
     string = string.lower().replace("<br />", " ")
@@ -227,9 +203,9 @@ if os.path.isdir("tekotan.pythonanywhere.com/"):
     saver.restore(
         sess,
         tf.train.latest_checkpoint(
-            "tekotan.pythonanywhere.com/" + STATIC_URL + "/tensorboard/RNN2"
+            os.path.abspath("/home/tekotan/tekotan.pythonanywhere.com/static/tensorboard/RNN2")
         ),
-    )
+        )
 else:
     saver.restore(
         sess, tf.train.latest_checkpoint("D:/Tekotan_Source/static/tensorboard\RNN2")
