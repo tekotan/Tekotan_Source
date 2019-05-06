@@ -11,29 +11,33 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from pathlib import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY
 SECURE_BROWSER_XSS_FILTER = False  # True
-SESSION_COOKIE_SECURE = False  # True
+SESSION_COOKIE_SECURE = True  # True
 SECURE_SSL_REDIRECT = False  # True
+CSRF_COOKIE_SECURE = True  # False
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "h2@i$zw89dm4%@4)7#i&gn&5h%c=b(k!p*(#&r=+84$cl3f3sv"
+KEY_FILE = Path("./mysite/key.txt")
+EMAIL_FILE = Path("./mysite/email.txt")
+
+SECRET_KEY = KEY_FILE.read_text().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["www.tekotan.com", "127.0.0.1"]
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "b.tanish@tugun.net"
-EMAIL_HOST_PASSWORD = "Ambition1"
+EMAIL_HOST_PASSWORD = EMAIL_FILE.read_text().strip()
 DEFAULT_FROM_EMAIL = "noreply@tekotan.com"
 EMAIL_PORT = 587
 
