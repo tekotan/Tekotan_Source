@@ -24,8 +24,8 @@ CSRF_COOKIE_SECURE = True  # False
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-KEY_FILE = Path("./mysite/key.txt")
-EMAIL_FILE = Path("./mysite/email.txt")
+KEY_FILE = Path("./tekotan.pythonanywhere.com/mysite/key.txt").absolute()
+EMAIL_FILE = Path("./tekotan.pythonanywhere.com/mysite/email.txt").absolute()
 
 SECRET_KEY = KEY_FILE.read_text().strip()
 
