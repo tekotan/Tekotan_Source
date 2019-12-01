@@ -7,3 +7,5 @@ Sentiment_Analysis/Numpy_Arrays
 django
 mysite/key.txt
 mysite/email.txt
+env/**
+.vscode
