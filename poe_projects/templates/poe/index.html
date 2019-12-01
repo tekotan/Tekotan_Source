@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+
+	<head>
+		<title>Principles of Engineering Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<link rel="icon" type="image/png" href="../{{ STATIC_URL }}images/favicon.png">
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var elem = document.getElementById('header-page')
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="header-page" class="alt">
+			<div class="inner">
+				<h1>Principles of Engineering Projects</h1>
+				<p>Artificial Intelligence Projects using Tensoflow</p>
+			</div>
+		</header>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+			</h3>
+			<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+			</h3>
+			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+			</h3>
+			<div class="dropdown">
+				<h3 class="nav-4 dropbtn nav-pad active"><a class="nav-link">Projects</a></h2>
+				</h3>
+				<div class="dropdown-content">
+					<a href="/tensorflow" class="active">Tensorflow Projects</a>
+					<a href="/csp">Projects from Computer Science Principles</a>
+					<a href="/poe">Projects from Principles of Engineering</a>
+					<!--<a href="/other">Other Projects</a>-->
+					<!-- Above is the link to other projects, which I am disabling because they are not accompanied by any documentation -->
+				</div>
+			</div>
+			<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
+			</h3>
+		</div>
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Items -->
+			<section id="main" class="main">
+				<header id="poe">
+					<h2>Principles of Engineering</h2>
+				</header>
+				<p>
+				As part of requirements to graduate as an engineering student at Dublin High School and later on in college 
+				and as a primer class to learn the basic engineering practices, I am takin Honors Principles of Engineering 
+				at my school. The class explores a variety of physics concepts such as kinematics, statics, circuits, heat 
+				engines, and many more. Each topic is accompanied by a full scale project in which as a team we build a working 
+				prototype to address a problem.
+				</p>
+			</section>
+			<section class="main items">
+				<article class="item">
+					<header>
+						<a href="http://netlogoweb.org/web?www.tekotan.com/static/netlogo/MechanicalWinch.nlogo">
+						<img src="../{{ STATIC_URL }}images/pic004.jpg" alt="" /></a>
+						<h3>Mechanical Winch</h3>
+					</header>
+					<p>
+						<strong>Duration: </strong>October 14, 2019 - October 23, 2019 </br>
+						<strong>Partners: </strong>Oleg Bychenkov, Kaushal Ramalingam, and Kabir Shah</br>
+						<strong>Objective: </strong>Create a mechanical winch to lift at least 100 g for 30 cm</br>
+						<strong>Details: </strong>For this project, we as a team had to create a mechanical winch from Vex parts 
+						which would be able to lift 100 g for 30 cm. To power our winch, we had access to a FisherTech motor and 7.5 V 
+						of DC power. Since my teammates and I were all inexperienced in building machines, I took charge of the team to 
+						create the actual winch, and gave two other people the responsibility to create a NetLogo simulation to model 
+						our winch. Some of the challenges we faced was incorporating the FisherTech motor with the Vex pieces, since 
+						there was no built in method to do so, and the challenge of creating enough torque in the system while maintaining 
+						a reasonable speed of ascent. We overcame the motor challenge by makeshifting a frame to hold the motor in 
+						place by surrounding the motor with L-brackets, and we used mechanical advantage calculations to determine 
+						the desired gear ratio to use. This project taught me primarily how to build and assemble a machine, as I 
+						had no prior experience in doing so, and also taught me how to ask for help from other more experienced peers 
+						and improvise. This project helped me realize that it is important to learn new skills and try something I am 
+						not familiar with, along with teaching me how to delegate tasks to get the job done efficiently. The documentation 
+						for this project can be found 
+						<a href="../{{ STATIC_URL }}Website_pdfs/MechanicalWinch.pdf">here</a> while 
+						the netlogo simulation is 
+						<a href="http://netlogoweb.org/web?www.tekotan.com/static/netlogo/MechanicalWinch.nlogo">here</a>
+					</p>
+					<ul class="actions">
+						<li><a href="http://netlogoweb.org/web?www.tekotan.com/static/netlogo/MechanicalWinch.nlogo" class="button">
+						Click Here to view the Simulation</a></li>
+					</ul>
+				</article>
+				<article class="item">
+					<header>
+						<a href=""><img src="../{{ STATIC_URL }}images/pic025.jpg" alt="" /></a>
+						<h3>More Projects Coming</h3>
+					</header>
+					<p>
+						As I continue the class, I will be adding more projects later.
+					</p>
+					<ul class="actions">
+					</ul>
+				</article>
+
+			</section>
+			</section>
+			<!-- Main -->
+
+
+
+
+			<!-- Footer -->
+			<footer id="footer">
+
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+
+	</body>
+
+</html>
