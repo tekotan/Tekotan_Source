@@ -24,8 +24,17 @@ CSRF_COOKIE_SECURE = True  # False
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-KEY_FILE = Path("./tekotan.pythonanywhere.com/mysite/key.txt").absolute()
-EMAIL_FILE = Path("./tekotan.pythonanywhere.com/mysite/email.txt").absolute()
+# KEY_FILE = Path("./tekotan.pythonanywhere.com/mysite/key.txt").absolute()
+# EMAIL_FILE = Path("./tekotan.pythonanywhere.com/mysite/email.txt").absolute()
+if os.path.isdir("tekotan.pythonanywhere.com/"):
+    KEY_FILE = Path("./tekotan.pythonanywhere.com/mysite/key.txt").absolute()
+    EMAIL_FILE = Path("./tekotan.pythonanywhere.com/mysite/email.txt").absolute()
+
+else:
+    KEY_FILE = Path("./mysite/key.txt").absolute()
+    EMAIL_FILE = Path("./mysite/email.txt").absolute()
+
+
 
 SECRET_KEY = KEY_FILE.read_text().strip()
 
@@ -50,6 +59,7 @@ INSTALLED_APPS = [
     "work_experience.apps.WorkExperienceConfig",
     "other_projects.apps.OtherProjectsConfig",
     "tensorflow_projects.apps.TensorflowProjectsConfig",
+    "poe_projects.apps.POEProjectsConfig",
     "csp_projects.apps.CSPProjectsConfig",
     "signup.apps.SignupConfig",
     "tekotan.apps.TekotanConfig",
@@ -60,9 +70,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "about_me.apps.AboutMeConfig",
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -140,3 +152,11 @@ import os
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, "..\static")
+
+# CORS
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'http://netlogoweb.org',
+)
+

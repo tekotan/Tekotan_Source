@@ -30,6 +30,7 @@ urlpatterns = [
     url(r"^other/", include("other_projects.urls")),
     url(r"^experience/", include("work_experience.urls")),
     url(r"^tensorflow/", include("tensorflow_projects.urls")),
+    url(r"^poe/", include("poe_projects.urls")),
     url(r"^admin/", admin.site.urls),
     url(r"^static/(.*)$", serve, {"document_root": STATIC_ROOT, "show_indexes": True}),
     url(r"^about_me/", include("about_me.urls")),
