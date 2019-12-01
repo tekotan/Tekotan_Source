@@ -154,7 +154,7 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, "..\static")
 
 # CORS
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (
     'http://netlogoweb.org',
