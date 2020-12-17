@@ -208,7 +208,7 @@ if os.path.isdir("tekotan.pythonanywhere.com/"):
         )
 else:
     saver.restore(
-        sess, tf.train.latest_checkpoint("D:/Tekotan_Source/static/tensorboard\RNN2")
+        sess, tf.train.latest_checkpoint("D:/Projects/Tekotan_Source/static/tensorboard/RNN2")
     )
 """
 import os

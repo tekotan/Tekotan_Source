@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+
+
+	<head>
+		<title>Computer Science Applications Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<link rel="icon" type="image/png" href="../{{ STATIC_URL }}images/favicon.png">
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var elem = document.getElementById('header-page')
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="header-page" class="alt">
+			<div class="inner">
+				<h1>Computer Science Applications Projects</h1>
+				<p>Projects from Computer Science Applications</p>
+			</div>
+		</header>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+			</h3>
+			<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+			</h3>
+			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+			</h3>
+			<div class="dropdown">
+				<h3 class="nav-4 dropbtn nav-pad active"><a class="nav-link">Projects</a></h2>
+				</h3>
+				<div class="dropdown-content">
+					<a href="/tensorflow" class="active">Deep Learning Projects</a>
+					<a href="/csp">Projects from Computer Science Principles</a>
+					<a href="/poe">Projects from Principles of Engineering</a>
+					<a href="/csa">Projects from Computer Science Applications</a>
+					<!--<a href="/other">Other Projects</a>-->
+					<!-- Above is the link to other projects, which I am disabling because they are not accompanied by any documentation -->
+				</div>
+			</div>
+			<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
+			</h3>
+		</div>
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Items -->
+			<section id="main" class="main">
+				<header id="poe">
+					<h2>Computer Science Applications</h2>
+				</header>
+				<p>
+				I am taking AP Computer Science Applications at Dublin High School, a class that uses Java to teach 
+				programming concepts and basic algorithms. The projects in this class are open-ended with a purpose 
+				learn more than just the programming concepts from the class. 
+				</p>
+			</section>
+			<section class="main items">
+				<article class="item">
+					<header>
+						<a href=""></a>
+						<img src="../{{ STATIC_URL }}project_images/DerivativesSpaceInvaders.png" alt="" /></a>
+						<h3>Derivatives Space Invaders</h3>
+					</header>
+					<p class="left">
+						<strong>Duration: </strong>November 14, 2020 - December 1, 2020 </br>
+						<strong>Partners: </strong>Ayush Bandopadhyay, Sairam Balakumar, Joey Huang</br>
+						<strong>Objective: </strong>Create an educational game</br>
+						<strong>Details: </strong>For this project, we as a team had to create a educational game using Java, 
+						which would incorporate the topics learned in the course and teach an educational concept. 
+						Since my teammates and I were all experienced programmers, I took charge of the team to 
+						divide up the tasks according to all of our strengths. Some of the challenges we faced were working around the 
+						dynamics of Greenfoot, the GUI software we used, and in merging the code between everyone. We had to dive deep into the 
+						documentation of Greenfoot and look at the source code of Greenfoot to learn the dynamics of the software, and 
+						had to refactor the code written by everyone to make it flow neatly with each other. This project taught me 
+						the struggles of merging code in even small project groups, and taught me how to accurately delegate tasks according to 
+						everyones' strengths. This project also helped me realize how difficult it is sometimes to incorporate education in a 
+						entertaining manner, and gave me new respect for the teachers who work so hard for our education every day.
+					</p>
+
+				</article>
+				<article class="item">
+					<header>
+						<a href="">
+						<img src="../{{ STATIC_URL }}project_images/RocketTraversal.png" alt="" /></a>
+						<h3>Rocket Traversal</h3>
+					</header>
+					<p class="left">
+						<strong>Duration: </strong>Setpember 10, 2020 - September 20, 2020 </br>
+						<strong>Objective: </strong>Design a Simulation with Educational Purposes</br>
+						<strong>Details: </strong> 
+						For this project, we had to individually create a educational simulation using Java, 
+						which would incorporate java concepts from the AP Computer Science Applications and teach an educational concept. 
+						Since this was an individual project I took initiative to create something interesting in Greenfoot and learn something new 
+						along the way. Some of the challenges I faced were learning Java syntax and the workings of Greenfoot. I had to dive deep into the 
+						documentation of Greenfoot and had to refactor the code I wrote so everything flowed smoothly and looked pretty. This project taught me 
+						how to write scalable and differentiable code, since I took the initiative to make the code as clean and organized as possible. This was 
+						because the project contraints themselves were extremely simple, so I decided to push myself so that I could learn something. 
+						This project helped me learn key object oriented programming principles that I apply in my programming.
+					</p>
+				</article>
+				<article class="item">
+					<header>
+						<a href=""><img src="../{{ STATIC_URL }}images/pic025.jpg" alt="" /></a>
+						<h3>More Projects Coming</h3>
+					</header>
+					<p>
+						As I continue the class, I will be adding more projects later.
+					</p>
+					<ul class="actions">
+					</ul>
+				</article>
+
+			</section>
+			</section>
+			<!-- Main -->
+
+
+
+
+			<!-- Footer -->
+			<footer id="footer">
+
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+
+	</body>
+
+</html>
