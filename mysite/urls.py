@@ -22,7 +22,7 @@ from django.http import HttpResponseRedirect
 
 urlpatterns = [
     url(r"^", include("tekotan.urls")),
-    url(r"^Sentiment_Analysis/", include("SentimentAnalysis.urls")),
+    # url(r"^Sentiment_Analysis/", include("SentimentAnalysis.urls")),
     #    url(r'^recipe_extraction/', include('recipe_extraction.urls')),
     #    url(r'^calculator/', include('calculator.urls')),
     url(r"^signup/", include("signup.urls")),
@@ -34,4 +34,5 @@ urlpatterns = [
     url(r"^admin/", admin.site.urls),
     url(r"^static/(.*)$", serve, {"document_root": STATIC_ROOT, "show_indexes": True}),
     url(r"^about_me/", include("about_me.urls")),
+    url(r"^career_exploration/", include("career_exploration.urls"))
 ]

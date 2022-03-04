@@ -53,7 +53,7 @@ EMAIL_PORT = 587
 # Application definition
 
 INSTALLED_APPS = [
-    "SentimentAnalysis.apps.SentimentanalysisConfig",
+    # "SentimentAnalysis.apps.SentimentanalysisConfig",
     "calculator.apps.CalculatorConfig",
     #    'recipe_extraction.apps.RecipeExtractionConfig',
     "work_experience.apps.WorkExperienceConfig",
@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "about_me.apps.AboutMeConfig",
+    "career_exploration.apps.CareerExplorationConfig",
     'corsheaders',
 ]
 

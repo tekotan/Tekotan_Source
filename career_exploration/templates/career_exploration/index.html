@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+
+
+	<head>
+		<title>Career Exploration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="../{{ STATIC_URL }}images/favicon.png">
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var elem = document.getElementById('header-page')
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="header-page" class="alt">
+			<div class="inner">
+				<h1>About Me</h1>
+				<p></p>
+			</div>
+		</header>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+			</h3>
+			<h3 class="nav-2 nav-pad active"><a class="nav-link" href="/about_me">About</a></h2>
+			</h3>
+			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+			</h3>
+			<div class="dropdown">
+				<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
+				</h3>
+				<div class="dropdown-content">
+					<a href="/tensorflow">Tensorflow Projects</a>
+					<a href="/csp">Projects from Computer Science Principles</a>
+					<a href="/poe">Projects from Principles of Engineering</a>
+					<!--<a href="/other">Other Projects</a>-->
+					<!-- Above is the link to other projects, which I am disabling because they are not accompanied by any documentation -->
+				</div>
+			</div>
+			<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
+			</h3>
+		</div> <!-- Wrapper -->
+		<div id="wrapper">
+
+
+			<!-- Banner -->
+			<section id="intro" class="main">
+				<span class="icon major"><img class="profile_pic" src="../{{ STATIC_URL }}images/profile_pic.jpg"></img></span>
+				<h2>About Me</h2>
+				<p class="left">
+					Tanish Baranwal, Data Scientist </br>
+					Email: b.tanish@gmail.com </br>
+					City: Dublin, CA </br></br>
+					I am Tanish Baranwal, an aspiring programmer, and a sophomore at Dublin High School.
+					I am also enrolled in Stanford Online High School as a part-time student.
+					My goal in life is to get a PhD in artificial intelligence and use it to create
+					technology that will make lives easier for people all around the world. My plan
+					for achieving this goal is to take all possible computer science course available
+					at my high school and take courses in artificial intelligence to further my
+					information on the topic. I will then use the information to take on tasks
+					that will enrich my resume and my capabilities. This is my plan for the future
+					because I have always been fascinated with computers and automation. I believe
+					that the future of computing and machines is artificial intelligence and would
+					like to be part of the revolution.
+				</p>
+				<p class="left">
+					Some of my strengths are being able to naturally take the lead in a project
+					whose details are uncertain and being able to delegate tasks based on people’s
+					strengths and weaknesses. I learned how to do this in a class I took my Freshman 
+					year called Computer Science Principles, where the partner projects have
+					taught me how to work with all kinds of different people and personalities.
+					In my opinion, my greatest strength is being able to persuade people to do
+					tasks that they do not want to do. I have learned about these strengths mostly
+					in school in classes that require large amounts of group work, where I am
+					consistently the groups’ unspoken leader.
+				</p>
+				<p class="left">
+					I have been programming since I was in first grade, 9 years ago, and
+					have mastered Python completely. I am taking a year-long course on C++
+					from Stanford Online High and take courses and specializations on Coursera.
+					I have already taken a specialization on artificial intelligence, whose
+					certifications are posted
+					<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3HQGNCJCU8KY">here</a>.
+					I am also currently taking a specialization in 
+					<a href="https://www.coursera.org/specializations/reinforcement-learning?">Reinforcement Learning</a>
+					, which is a good compliment to my Deep Learning skills. Using the information I have learned
+					from these courses, I have been building and programming different popular
+					algorithms using Tensorflow and Python. I have built a classifier that uses
+					Recurrent Neural Networks and word embeddings to extract the underlying emotion
+					of any statement. Another project I did involved creating a
+					classifier to identify fraudulent credit card transactions. I have just completed 
+					another project called IVAN which combines multiple state of the art technologies to 
+					create a virtual website user which mimics the way a human navigates a site.
+				</p>
+				<p class="left">
+					Overall, I am a focused, ambitious student looking to change the way people
+					use and interact with computers. I aim to earn a PhD in artificial intelligence
+					and will accomplish it by taking advanced computer science courses online and
+					at school. My strengths are being a natural leader and persuading people to
+					complete tasks undesirable to them. I have been programming for 9 years
+					now, and am reaching mastery in python. Some projects I am working on are
+					analyzing sentiment from text and anomaly detection. Thank you for reading my
+					about me and I hope you enjoy exploring my website.
+				</p>
+				<ul class="actions">
+					<li><a href="https://github.com/tekotan" class="button big">View My Github Profile</a></li>
+					<li><a href="https://medium.com/@tekotan" class="button big">View My Medium Profile</a></li>
+				</ul>
+			</section>
+			<article class="item" id="contactForm">
+				<header>
+					<a src=""><img src="../{{ STATIC_URL }}images/pic021.jpg" alt="" /></a>
+					<h3>Contact Me Here</h3>
+				</header>
+				<form class="contactForm" method="POST">
+					{% csrf_token %}
+					<input name="name" class="formInput contactForm" type="text" id="name" name="name" autocorrect="off" placeholder="Name?" />
+					<input name="email" class="formInput contactForm" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?" />
+					<textarea name="message" class="formInput contactForm" name="message" id="message" placeholder="Message?"></textarea>
+
+					<br>
+					<input class="submitForm" type="reset" value="Clear your message" />
+					<input class="submitForm" type="submit" value="Send" />
+
+				</form>
+				<p>{{ result }}</p>
+			</article>
+
+
+			<!-- Footer -->
+			<footer id="footer">
+
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(window).bind('scroll', function() {
+					var navHeight = $('#header-page').height() + 300;
+					if ($(window).scrollTop() > navHeight) {
+						$('.nav-bar').addClass('fixed');
+						$('.nav-1').addClass('toleft');
+					} else {
+						$('.nav-bar').removeClass('fixed');
+						$('.nav-1').removeClass('toleft');
+					}
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
