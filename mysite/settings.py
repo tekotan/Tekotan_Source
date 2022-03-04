@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "other_projects.apps.OtherProjectsConfig",
     "tensorflow_projects.apps.TensorflowProjectsConfig",
     "poe_projects.apps.POEProjectsConfig",
+    "csa_projects.apps.CSAProjectsConfig",
     "csp_projects.apps.CSPProjectsConfig",
     "signup.apps.SignupConfig",
     "tekotan.apps.TekotanConfig",
