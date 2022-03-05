@@ -162,3 +162,4 @@ CORS_ORIGIN_WHITELIST = (
     'http://netlogoweb.org',
 )
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
