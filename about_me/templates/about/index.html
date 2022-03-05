@@ -29,15 +29,15 @@
 			</div>
 		</header>
 		<div class="nav-bar">
-			<h3 class="nav-1 nav-pad active"><a class="nav-link" href="/">Home</a></h2>
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
 			</h3>
-			<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+			<h3 class="nav-2 nav-pad active"><a class="nav-link" href="/about_me">About</a></h2>
 			</h3>
 			<div class="dropdown">
 				<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
 				</h3>
 				<div class="dropdown-content">
-					<a href="/tensorflow" class="active">Deep Learning Projects</a>
+					<a href="/tensorflow">Deep Learning Projects</a>
 					<a href="/csp">Projects from Computer Science Principles</a>
 					<a href="/poe">Projects from Principles of Engineering</a>
 					<a href="/csa">Projects from Computer Science Applications</a>
@@ -47,7 +47,7 @@
 			</div>
 			<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
 			</h3>
-			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/career_exploration">Career Exploration</a></h2>
+			<h3 class="nav-6 nav-pad"><a class="nav-link" href="/career_exploration">Career Exploration</a></h2>
 			</h3>
 		</div> <!-- Wrapper -->
 		<div id="wrapper">
@@ -117,24 +117,6 @@
 					<li><a href="https://medium.com/@tekotan" class="button big">View My Medium Profile</a></li>
 				</ul>
 			</section>
-			<article class="item" id="contactForm">
-				<header>
-					<a src=""><img src="../{{ STATIC_URL }}images/pic021.jpg" alt="" /></a>
-					<h3>Contact Me Here</h3>
-				</header>
-				<form class="contactForm" method="POST">
-					{% csrf_token %}
-					<input name="name" class="formInput contactForm" type="text" id="name" name="name" autocorrect="off" placeholder="Name?" />
-					<input name="email" class="formInput contactForm" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?" />
-					<textarea name="message" class="formInput contactForm" name="message" id="message" placeholder="Message?"></textarea>
-
-					<br>
-					<input class="submitForm" type="reset" value="Clear your message" />
-					<input class="submitForm" type="submit" value="Send" />
-
-				</form>
-				<p>{{ result }}</p>
-			</article>
 
 
 			<!-- Footer -->
