@@ -17,23 +17,21 @@
 				var elem = document.getElementById('header-page')
 				var n = Math.floor(Math.random() * (15))
 				var conv_n = n > 9 ? "" + n : "0" + n
-				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}career_experience_photos/career.jpg)';
 			}
 			window.onload = set_banner_pic;
 		</script>
 		<!-- Header -->
 		<header id="header-page" class="alt">
 			<div class="inner">
-				<h1>About Me</h1>
+				<h1>Career Exploration</h1>
 				<p></p>
 			</div>
 		</header>
 		<div class="nav-bar">
 			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
 			</h3>
-			<h3 class="nav-2 nav-pad active"><a class="nav-link" href="/about_me">About</a></h2>
-			</h3>
-			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+			<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
 			</h3>
 			<div class="dropdown">
 				<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
@@ -50,97 +48,190 @@
 			</div>
 			<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
 			</h3>
+			<h3 class="nav-6 nav-pad active"><a class="nav-link" href="/career_exploration">Career Exploration</a></h2>
+			</h3>
 		</div> <!-- Wrapper -->
 		<div id="wrapper">
 
 
 			<!-- Banner -->
 			<section id="intro" class="main">
-				<span class="icon major"><img class="profile_pic" src="../{{ STATIC_URL }}images/profile_pic.jpg"></img></span>
-				<h2>About Me</h2>
 				<p class="left">
-					Tanish Baranwal, Data Scientist </br>
-					Email: b.tanish@gmail.com </br>
-					City: Dublin, CA </br></br>
-					I am Tanish Baranwal, an aspiring programmer, and a sophomore at Dublin High School.
-					I am also enrolled in Stanford Online High School as a part-time student.
-					My goal in life is to get a PhD in artificial intelligence and use it to create
-					technology that will make lives easier for people all around the world. My plan
-					for achieving this goal is to take all possible computer science course available
-					at my high school and take courses in artificial intelligence to further my
-					information on the topic. I will then use the information to take on tasks
-					that will enrich my resume and my capabilities. This is my plan for the future
-					because I have always been fascinated with computers and automation. I believe
-					that the future of computing and machines is artificial intelligence and would
-					like to be part of the revolution.
+					During my time in the engineering program at Dublin High School, I have met a 
+					variety of industry professionals through workplace field trips and guest speakers. 
+					These experiences have opened my eyes to the true nature of a career in engineering 
+					and computer science, and have impressed upon me the importance of seemingly prosaic 
+					excercises in my engineering classes.
 				</p>
+				<h2>Field Trips</h2>
+				<h3>UC Berkeley's EECS Day</h3>
+				<span class="icon minor"><img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/ucb.png"></img></span>
 				<p class="left">
-					Some of my strengths are being able to naturally take the lead in a project
-					whose details are uncertain and being able to delegate tasks based on people’s
-					strengths and weaknesses. I learned how to do this in a class I took my Freshman 
-					year called Computer Science Principles, where the partner projects have
-					taught me how to work with all kinds of different people and personalities.
-					In my opinion, my greatest strength is being able to persuade people to do
-					tasks that they do not want to do. I have learned about these strengths mostly
-					in school in classes that require large amounts of group work, where I am
-					consistently the groups’ unspoken leader.
+					Visiting UC Berkely for EECS day was extremely eye-opening. The field trip involved a complete tour of the school, 
+					several keynote speakers that were professors at Berkeley, and the opportunity for conversation with several 
+					undergraduate students in the major. One of the most helpful experiences during that trip was a workshop 
+					conducted in a typical computer science lab, in which we were taken through what an actual lab would look like 
+					in EECS, which gave a very accurate notion of what college would be like. I remember being amazed at the projects 
+					the students made for their classes and the massive level of resources available to them, from high-precision 
+					robotics to super-fast computers. I was able to experience what it was like to major in electrical engineering 
+					and computer science through classroom tours and live demos of the projects students made. It was also helpful 
+					to see the lifestyles of the students and how despite being really big schools, there were several quirks about 
+					the school that made it feel homely and welcoming to newer students. The experience eventually led me to pay 
+					attention to these details when choosing to apply to universities and helped me write my college essays as well
+
 				</p>
+				<h3>Patriot Jet Team Field Trip</h3>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/patriot1.png"></img>
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/patriot2.png"></img>
+				</span>
 				<p class="left">
-					I have been programming since I was in first grade, 9 years ago, and
-					have mastered Python completely. I am taking a year-long course on C++
-					from Stanford Online High and take courses and specializations on Coursera.
-					I have already taken a specialization on artificial intelligence, whose
-					certifications are posted
-					<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3HQGNCJCU8KY">here</a>.
-					I am also currently taking a specialization in 
-					<a href="https://www.coursera.org/specializations/reinforcement-learning?">Reinforcement Learning</a>
-					, which is a good compliment to my Deep Learning skills. Using the information I have learned
-					from these courses, I have been building and programming different popular
-					algorithms using Tensorflow and Python. I have built a classifier that uses
-					Recurrent Neural Networks and word embeddings to extract the underlying emotion
-					of any statement. Another project I did involved creating a
-					classifier to identify fraudulent credit card transactions. I have just completed 
-					another project called IVAN which combines multiple state of the art technologies to 
-					create a virtual website user which mimics the way a human navigates a site.
+					The field trip to Patriot foundation was a very interesting learning experience in which we learned about the 
+					planes and their basic structure, learned about supersonic jets and orbital mechanics, and got to spend time 
+					in the flight simulators to learn about what it is actually like to fly a plane. The most interesting 
+					portion about this field trip was the Supersonic Jet presentation in which I learned about how humans 
+					created planes that could go supersonic in level flight and the challenges associated with it. It was 
+					interesting to learn about how the amount of drag force on the plane increased so sharply around the speed 
+					of sound, and how different techniques such as swept wings and the area rule were employed to reduce the 
+					drag, advancements that carried over to subsonic flights as well to increase efficiency. The flight simulators 
+					helped me figure out that flying a plane is much harder than driving a car because there is an entirely 
+					extra dimension of control you need to keep in mind. Overall, the field trip helped me understand many 
+					questions I had about flying aircraft and opened my eyes to an alternate career path.
+
 				</p>
+				<h3>LAM Research Field Trip</h3>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/lam1.png"></img>
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/lam2.png"></img>
+				</span>
 				<p class="left">
-					Overall, I am a focused, ambitious student looking to change the way people
-					use and interact with computers. I aim to earn a PhD in artificial intelligence
-					and will accomplish it by taking advanced computer science courses online and
-					at school. My strengths are being a natural leader and persuading people to
-					complete tasks undesirable to them. I have been programming for 9 years
-					now, and am reaching mastery in python. Some projects I am working on are
-					analyzing sentiment from text and anomaly detection. Thank you for reading my
-					about me and I hope you enjoy exploring my website.
+					Through an event called the Manufacturing Day, we went to companies like LAM where I got to see how the 
+					machinery that manufactures silicon chips was made. On this field trip, I learned about the 
+					complexities of managing large teams and dealing with influential and difficult customers. It was 
+					very interesting to meet with the different engineers and managers and to hear about their journey 
+					through their careers, and the opportunity to learn about their mistakes was in my opinion priceless. 
+					Seeing the number of regulations surrounding the cleanroom and the experience of suiting up to enter 
+					the room was very exciting, and observing the etching machines and masks in person gave me a new 
+					appreciation for the technology around us. 
 				</p>
-				<ul class="actions">
-					<li><a href="https://github.com/tekotan" class="button big">View My Github Profile</a></li>
-					<li><a href="https://medium.com/@tekotan" class="button big">View My Medium Profile</a></li>
-				</ul>
+
+				<h3>Workday Field Trip</h3>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/workday.png"></img>
+				</span>
+				<p class="left">
+					During freshman year, I went on a workplace field trip to Workday, where I met several web developers,
+					 project managers, and computer programmers. The trip involved a full tour of the office in which I was 
+					 able to see the working conditions of all the employees, and things like the notice boards and break 
+					 rooms. It was super interesting to see how they all went along with their everyday lives and to see a 
+					 common workplace climate where everyone was mutually acquainted with each other. I also witnessed a 
+					 live scrum call and was able to look at the GitHub pull request system they had to manage the work of 
+					 hundreds of employees. The most interesting thing I learned, however, was through the presentations 
+					 the different employees gave about their backgrounds and how they got the job; they all had unique 
+					 circumstances from different countries and family backgrounds and yet they all coalesced in one place 
+					 at Workday.
+				</p>
+				<h2>Guest Speakers</h2>
+				<h3>Jason Yosinski</h3>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/yosinski.png"></img>
+				</span>
+				<p class="left">
+					Of all of the guest speakers I’ve listened to throughout my time in the engineering program, one was 
+					particularly interesting due to the fact that he was a professional in the field I want to go into, 
+					Deep Learning. Jason, from Uber Labs, helped reveal the true potential of Deep Learning to me. Some 
+					key takeaways I had from the presentation was how Deep Learning was extremely powerful in the tasks 
+					that humans are good at, such as classification and empirical decision making but are not as powerful 
+					in tasks such as memorizing data or doing heavy calculations, similar to humans. Additionally, Deep 
+					Learning models develop surprisingly understandable abstractions for tasks such as image classification, 
+					for example developing the ability to recognize facial features and larger objects and entities in 
+					the image itself. The way that Jason was able to apply Deep Learning within Uber inspired me and 
+					showed me the immense amount of potential that Deep Learning has to revolutionize all current 
+					industries similar to the way computing changed the world.
+				</p>
+				<h3>James Chinn</h3>
+				<p class="left">
+					Another guest speaker we had was James Chinn from Nasa’s Jet Propulsion Laboratory (JPL). He worked on 
+					the Perseverance rover launched in 2020 to land on Mars. His depth of experience in the field of 
+					aerospace engineering. After years of watching YouTubers like Mark Rober, I had a significant interest 
+					in the work that goes on at Nasa and his talk about the rover and his path to Nasa was fascinating to 
+					me. It was also interesting to learn about how he used seemingly mundane pieces of information he 
+					learned in high school and college to his job, and how many things that may seem useless when learning 
+					turns out to be extremely useful in the long run.
+
+				</p>
+				<h3>Maynard Holliday</h3>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/holliday.png"></img>
+				</span>
+				<p class="left">
+					Maynard Holliday was an engineer that worked on a robot that could explore the highly radioactive remains 
+					of the Chernobyl power plant. His explanation about the reactor meltdown took place due to the coolant 
+					fluid failing to flow into the reactor core and leading the uranium rods to heat up to the point that 
+					they melted was fascinating. His speech focused on the difficulties of engineering a robot to work 
+					in such extreme environments, as the area was highly radioactive, which would destroy typical 
+					electronics and sensors. They also needed the robot to be prepared for the vast number of unknowns 
+					regarding what was inside the concrete hull that contained the reactor. The robot’s engineers took 
+					inspiration from nature, modeling the movement paths of the robot after animals and insects. Overall, 
+					the speech showed me the extremes of the field of engineering and how applicable a lot of skills 
+					from school and from various other fields like biology can be sources of inspiration for technological 
+					innovation.
+
+				</p>
+				<h3>Dr. Matt Coleman, Dr. Mattias Frank, Dr. David Loftus, Erin M. McKay</h3>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/llnl.jpg"></img>
+				</span>
+				<p class="left">
+					The talk was about the medical challenges scientists and astronauts have to deal with when in space 
+					en route to a different planet. The challenges are different from the international space station 
+					or even the moon because the trip there and back is within a few days, which means that astronauts 
+					can be transported back to earth for critical conditions. The issue with this on the trip to mars 
+					is that it takes around 6 months to get to Mars, which means that all medical treatments and diagnoses 
+					must occur on the shuttle. To diagnose conditions, blood and breath samples are used, with blood 
+					being the gold standard in the medical industry. The blood needs to be centrifuged and analyzed, 
+					for which microfluidics is used to do so without expensive equipment. Breath analyzers are similar 
+					to blood ones in the way that they need to be separated and then analyzed. The key takeaways of 
+					the talk were the ingenious devices that scientists engineer to solve problems around difficult 
+					constraints such as space, weight, and complexity. Since astronauts don't have space for full-scale 
+					bio labs with centrifuges and other equipment, scientists used the field of microfluidics to 
+					separate the blood without using more than a few drops of blood and without the space-wasting 
+					equipment. The other interesting thing was the way they used simple condensation principles to 
+					collect and analyze the breath of astronauts in the E-Nose. 
+				</p>
+				<h2>Engineering Mentorship Program with Mr. Hitesh Parashar and Mr. Silvino Cruz</h2>
+				<span class="icon minor">
+					<img class="profile_pic" src="../{{ STATIC_URL }}career_experience_photos/parashar.jpg"></img>
+				</span>
+				<p class="left">
+					For the engineering mentor program, I worked with <a href="https://www.linkedin.com/in/hitesh/">Mr. Hitesh Parashar</a>, 
+					Co-Founder of Astellent, and <a href="https://www.linkedin.com/in/silvino-cruz-p-e-70a61216/">Mr. Silvino Cruz</a>, 
+					Senior Electrical Engineer at Twitter. My experience with the mentorship 
+					program was extremely fruitful, and I was able to confirm and solidify many of my future plans by 
+					bouncing off ideas from my mentor, Mr. Parashar. I do my best planning in collaborative circumstances so 
+					this program was perfect for that. One specific thing I learned was skills in writing my resume and crafting 
+					my online portfolio. The problem action reaction format I learned was interesting and helped me create 
+					and make my resume more catchy. Rewriting my resume using this format allowed me to fit much more information 
+					in a smaller space. Another meaningful experience I had was when my mentor was talking about 
+					future aspirations for people willing to go into the field of AI through academia and transitioning 
+					into the industry. It was reassuring to hear that it was a common career path in AI for someone 
+					interested in getting a Ph.D. and interested in research. Some of my best memories from the 
+					mentorship program were during the mock interviews we did. I learned a lot during that meeting, 
+					especially how to organize and present myself in a way that is appealing to interviewers and 
+					people looking to hire me. 
+				</p>
+
 			</section>
-			<article class="item" id="contactForm">
-				<header>
-					<a src=""><img src="../{{ STATIC_URL }}images/pic021.jpg" alt="" /></a>
-					<h3>Contact Me Here</h3>
-				</header>
-				<form class="contactForm" method="POST">
-					{% csrf_token %}
-					<input name="name" class="formInput contactForm" type="text" id="name" name="name" autocorrect="off" placeholder="Name?" />
-					<input name="email" class="formInput contactForm" type="email" name="email" id="email" autocapitalize="off" autocorrect="off" placeholder="Email?" />
-					<textarea name="message" class="formInput contactForm" name="message" id="message" placeholder="Message?"></textarea>
-
-					<br>
-					<input class="submitForm" type="reset" value="Clear your message" />
-					<input class="submitForm" type="submit" value="Send" />
-
-				</form>
-				<p>{{ result }}</p>
-			</article>
 
 
 			<!-- Footer -->
 			<footer id="footer">
-
+				<p class="align-left">
+					<b>Contact</b> </br>
+					Tanish Baranwal, Dublin, CA </br>
+					Phone: 510-480-7799 </br>
+					Email: b.tanish@gmail.com
+				</p>
 			</footer>
 
 		</div>

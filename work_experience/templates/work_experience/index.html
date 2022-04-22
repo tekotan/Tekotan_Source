@@ -17,7 +17,7 @@
 			var elem = document.getElementById('header-page')
 			var n = Math.floor(Math.random() * (15))
 			var conv_n = n > 9 ? "" + n : "0" + n
-			elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+			elem.style.backgroundImage = 'url(../../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
 		}
 		window.onload = set_banner_pic;
 	</script>
@@ -33,13 +33,11 @@
 		</h3>
 		<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
 		</h3>
-		<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
-		</h3>
 		<div class="dropdown">
 			<h3 class="nav-4 dropbtn nav-pad"><a class="nav-link">Projects</a></h2>
 			</h3>
 			<div class="dropdown-content">
-				<a href="/tensorflow" class="active">Deep Learning Projects</a>
+				<a href="/tensorflow">Deep Learning Projects</a>
 				<a href="/csp">Projects from Computer Science Principles</a>
 				<a href="/poe">Projects from Principles of Engineering</a>
 				<a href="/csa">Projects from Computer Science Applications</a>
@@ -50,6 +48,8 @@
 		</div>
 		<h3 class="nav-5 nav-pad active"><a class="nav-link" href="/experience">Work Experience</a></h2>
 		</h3>
+		<h3 class="nav-6 nav-pad"><a class="nav-link" href="/career_exploration">Career Exploration</a></h2>
+		</h3>
 	</div>
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -57,43 +57,12 @@
 
 		<!-- Banner -->
 		<section id="intro" class="main">
-			<span class="icon fa-diamond major"></span>
-			<p class="left">During my time in the engineering program, I have met a number of industry professionals through workplace field trips and guest speakers. 
-			These experiences have shaped my plans for the future in the sense that I am more clear than ever in my future career as a Data Scientist. 
-			While all of these experiences were beneficial and highly interesting, there were some that played a significant role in my planned future pursuits.
-			</br>
-			The most influential field trip I had was when I went to LAM where I got to see how the machinery that manufactures silicon chips was made. 
-			On this field trip, I learned about the complexities of managing large teams and dealing with influential and difficult customers. It was very 
-			interesting to meet with the different engineers and managers and to hear about their journey through their careers, and the opportunity to 
-			learn about their mistakes was in my opinion priceless.
-			</br>
-			Of all of the guest speakers I’ve listened to throughout my time in the engineering program, one was particularly interesting due to the fact 
-			that he was a professional in the field I want to go into, Deep Learning. Jason, from Uber Labs, helped reveal the true potential of Deep Learning 
-			to me. Some key takeaways I had from the presentation was how Deep Learning was extremely powerful in the tasks that humans are good at, such as 
-			classification and empirical decision making but are not as powerful in tasks such as memorizing data or doing heavy calculations, similar to 
-			humans. Additionally, Deep Learning models develop surprisingly understandable abstractions for tasks such as image classification, for example 
-			developing the ability to recognize facial features and larger objects and entities in the image itself. The way that Jason was able to apply 
-			Deep Learning within Uber inspired me and showed me the immense amount of potential that Deep Learning has to revolutionize all current 
-			industries similar to the way computing changed the world.</p>
+			<ul class="actions">
+				<li><a href="../{{ STATIC_URL }}Website_pdfs/Resume.pdf">My Resume</a></li></ul>
+			<iframe src = "../{{ STATIC_URL }}Website_pdfs/Resume.pdf" style="width:80%; height:45em;"></iframe>
+					
 		</section>
-			<section class="main">
-				<article class="item">
-					<header>
-						<a href="/experience"><img src="../{{ STATIC_URL }}images/pic009.jpg" alt="" /></a>
-						<h3>Resume</h3>
-					</header>
-					<p>Read my resume about my educational journey to reach my career goals!</p>
-					<ul class="actions">
-						<li><a href="../{{ STATIC_URL }}Website_pdfs/Resume.pdf">My Resume</a></li>
-					</ul>
-				</article>
-			</section>
-			</section>
-			{% comment %} <object data="../{{ STATIC_URL }}Website_pdfs/Resume.pdf" type="application/pdf" width="80%" height="1130em">
-				<embed src="../{{ STATIC_URL }}Website_pdfs/Resume.pdf" type="application/pdf">
-				<p>This browser does not support PDFs. Please download the PDF to view it: <a href="../{{ STATIC_URL }}Website_pdfs/Resume.pdf">Download PDF</a>.</p>
-				</embed>
-			</object> {% endcomment %}
+			
 		<!--	<h2>Resume</h2>
 			<p class='left'>
 				<h3 class="left">Tanish Baranwal</h3>
@@ -151,7 +120,12 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-
+			<p class="align-left">
+				<b>Contact</b> </br>
+				Tanish Baranwal, Dublin, CA </br>
+				Phone: 510-480-7799 </br>
+				Email: b.tanish@gmail.com
+			</p>
 		</footer>
 
 	</div>
