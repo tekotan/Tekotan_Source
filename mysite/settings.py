@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     "tensorflow_projects.apps.TensorflowProjectsConfig",
     "poe_projects.apps.POEProjectsConfig",
     "csa_projects.apps.CSAProjectsConfig",
+    "de_projects.apps.DEProjectsConfig",
     "csp_projects.apps.CSPProjectsConfig",
     "signup.apps.SignupConfig",
     "tekotan.apps.TekotanConfig",
@@ -150,6 +151,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = "static/"
+
 import os
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))

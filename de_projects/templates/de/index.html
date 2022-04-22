@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+
+
+	<head>
+		<title>Digital Electronics Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../{{ STATIC_URL }}assets/css/main_.css" />
+		<link rel="icon" type="image/png" href="../{{ STATIC_URL }}images/favicon.png">
+		<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			function set_banner_pic() {
+				var elem = document.getElementById('header-page')
+				var n = Math.floor(Math.random() * (15))
+				var conv_n = n > 9 ? "" + n : "0" + n
+				elem.style.backgroundImage = 'url(../{{ STATIC_URL }}images/banner' + conv_n + '.jpg)';
+			}
+			window.onload = set_banner_pic;
+		</script>
+		<!-- Header -->
+		<header id="header-page" class="alt">
+			<div class="inner">
+				<h1>Digital Electronics Projects</h1>
+				<p>Projects from Digital Electronics</p>
+			</div>
+		</header>
+		<div class="nav-bar">
+			<h3 class="nav-1 nav-pad"><a class="nav-link" href="/">Home</a></h2>
+			</h3>
+			<h3 class="nav-2 nav-pad"><a class="nav-link" href="/about_me">About</a></h2>
+			</h3>
+			<h3 class="nav-3 nav-pad"><a class="nav-link" href="/about_me/#contactForm">Contact</a></h2>
+			</h3>
+			<div class="dropdown">
+				<h3 class="nav-4 dropbtn nav-pad active"><a class="nav-link">Projects</a></h2>
+				</h3>
+				<div class="dropdown-content">
+					<a href="/tensorflow">Deep Learning Projects</a>
+					<a href="/csp">Projects from Computer Science Principles</a>
+					<a href="/poe">Projects from Principles of Engineering</a>
+					<a href="/csa">Projects from Computer Science Applications</a>
+					<a href="/de" class="active">Projects from Digital Electronics</a>
+					<!--<a href="/other">Other Projects</a>-->
+					<!-- Above is the link to other projects, which I am disabling because they are not accompanied by any documentation -->
+				</div>
+			</div>
+			<h3 class="nav-5 nav-pad"><a class="nav-link" href="/experience">Work Experience</a></h2>
+			</h3>
+		</div>
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Items -->
+			<section id="main" class="main">
+				<header id="poe">
+					<h2>Digital Electroncs</h2>
+				</header>
+				<p>
+				I am taking Honors Digital Electronics at Dublin High School, a class that teaches introductory 
+				electrical engineering concepts and circuit design software. The projects in this class involve
+				use combinational and sequential logic to design circuits to solve various problems. 
+				</p>
+			</section>
+			<section class="main items">
+				<article class="item">
+					<header>
+						<a href="">
+						<img src="../{{ STATIC_URL }}project_images/DE_Project1.png" alt="" /></a>
+						<h3>Sequential Circuit Design</h3>
+					</header>
+					<p class="left">
+						<strong>Duration: </strong>November 8, 2021 - December 15, 2021</br>
+						<strong>Objective: </strong>Utilize the 74L574 flip flop integrated circuit (IC) 
+						to explore sequential logic design.</br>
+						<strong>Details: </strong> 
+						Through this project, I learned about the chip readout of the digital flip-flop IC, and 
+						how one can create a sense of memory using simple gates. It was interesting to learn 
+						about the clever way gates can be looped onto each other to allow values to be stored 
+						in a circuit, and how that functionality can be scaled up to eventually form computer 
+						memory. Creating this circuit on multisim first helped me learn how to debug sequential 
+						circuits and track the outputs of the switch easily, which helped me decipher several 
+						applications of the flip-flop circuit to real-life electronics. I also learned the 
+						importance of first modeling circuits so that their functionality can be predicted and 
+						tested in a simulation before prototyping on a breadboard. 
+
+					</p>
+				</article>
+				<article class="item">
+					<header>
+						<a href=""></a>
+						<img src="../{{ STATIC_URL }}project_images/DE_Project2.gif" alt="" /></a>
+						<h3>Timer Circuit Design</h3>
+					</header>
+					<p class="left">
+						<strong>Duration: </strong>December 15, 2021 - December 22, 2021 </br>
+						<strong>Objective: </strong>To utilize the 555 timer integrated circuit (IC) to automatically 
+						send an oscillating clock signal to a sequential circuit.</br>
+						<strong>Details: </strong>Through this project, I not only learned about the math behind 
+						creating the oscillating clock signal using the 555 timer, but the chemistry related to 
+						capacitors in how they release their charges. The exponential equation for the energy 
+						release of a capacitor sparked a memory I had from AP Chemistry, in which a similar equation 
+						was used to predict the progress of a chemical reaction. This connection was important 
+						to me because it reinforced my idea that everything in the STEM field was somehow 
+						connected with each other. Another skill I acquired through this project was experience 
+						debugging electrical circuits. While this was an individual project, I ended up taking 
+						part of the responsibility to help debug the rest of the class’s circuits as I was 
+						the first one done. Through debugging over 15 circuits, I formulated a checklist for 
+						debugging in which I would first check that the wiring was correct and then analyze each 
+						individual IC to see if it was functioning correctly. I found that most of the time 
+						it was an issue with a component being broken and not functioning properly, which was 
+						both frustrating and eye opening at the same time.
+
+					</p>
+
+				</article>
+
+			</section>
+			</section>
+			<!-- Main -->
+
+
+
+
+			<!-- Footer -->
+			<footer id="footer">
+
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="../{{ STATIC_URL }}assets/js/jquery.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/skel.min.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/util.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/main_.js"></script>
+		<script src="../{{ STATIC_URL }}assets/js/nav.js"></script>
+
+	</body>
+
+</html>

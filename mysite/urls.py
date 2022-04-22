@@ -28,6 +28,7 @@ urlpatterns = [
     url(r"^signup/", include("signup.urls")),
     url(r"^csp/", include("csp_projects.urls")),
     url(r"^csa/", include("csa_projects.urls")),
+    url(r"^de/", include("de_projects.urls")),
     url(r"^other/", include("other_projects.urls")),
     url(r"^experience/", include("work_experience.urls")),
     url(r"^tensorflow/", include("tensorflow_projects.urls")),
